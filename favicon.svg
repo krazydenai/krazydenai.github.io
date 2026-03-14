@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="KrazyDen K favicon">
+  <defs>
+    <linearGradient id="plateGrad" x1="5%" y1="20%" x2="95%" y2="90%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eaf0ff"/>
+    </linearGradient>
+    <linearGradient id="kGrad" x1="15%" y1="10%" x2="85%" y2="85%">
+      <stop offset="0%" stop-color="#44cfff"/>
+      <stop offset="45%" stop-color="#6f63ff"/>
+      <stop offset="100%" stop-color="#b144ff"/>
+    </linearGradient>
+    <filter id="kShadow" x="-40%" y="-20%" width="180%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.4" flood-color="#4530ff" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="#ffffff"/>
+
+  <!-- White curved plate -->
+  <path
+    d="M6 36 C8 16 26 6 42 8 C54 9 60 18 58 30 C56 46 42 58 24 57 C12 56 5 47 6 36 Z"
+    fill="url(#plateGrad)"
+    stroke="#f1f4ff"
+    stroke-width="1.3"
+  />
+
+  <!-- Classic KrazyDen K with subtle shadow -->
+  <path
+    d="M20 48 L20 16 L28 16 L28 31 L40 16 L49 16 L36 31.5 L50 48 L40.5 48 L30 35.7 L28 37.9 L28 48 Z"
+    fill="url(#kGrad)"
+    filter="url(#kShadow)"
+  />
+</svg>
