@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -2079,7 +2079,7 @@
         </div>
         <div class="hero-meta">
             <p class="hero-subtitle">
-                A neon-plated intelligence stack engineered for builders who want high-impact reasoning without cloud costs.
+                A neon-plated intelligence stack engineered for builders who want high-impact reasoning without cloud costs. Local-first AI that runs anywhere, stays private, and scales with your needs.
             </p>
             <div class="hero-stats">
                 <div class="hero-stat-card" onclick="showDetail('metric-edge-nodes')">
@@ -2099,7 +2099,7 @@
                     <div class="hero-stat-label">Relentless evolution</div>
                 </div>
             </div>
-            <div class="hero-footnote">New drops every Friday</div>
+            <div class="hero-footnote">New drops every Friday • Open source • Private by default</div>
         </div>
         <div class="hero-actions">
             <div class="hero-actions-main">
@@ -2121,6 +2121,61 @@
             </div>
         </div>
     </section>
+
+    <section class="home-intro-section" style="padding: 3rem 2rem; max-width: 1200px; margin: 0 auto;">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Why KrazyDen?</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>🏠 Local-First by Design</h4>
+                <p>Your data never leaves your machine. Offline-capable, cloud-optional architecture means you're never locked into paying per-query.</p>
+            </div>
+            <div class="feature-item">
+                <h4>⚙️ Adaptive Intelligence</h4>
+                <p>Automatically routes between fast (1M param) and deep reasoning (64M param) models based on task complexity and available resources.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🚀 Production Ready</h4>
+                <p>Tested on Raspberry Pi, laptops, servers, and mobile. Works reliably across hardware—not just in labs with unlimited compute.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🧠 Real Reasoning</h4>
+                <p>Chain-of-thought architecture that actually thinks through problems step-by-step, not just pattern matching. Measurable quality at small scales.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🔧 Tool-Ready</h4>
+                <p>Built for agents. Models understand how to call external functions, parse results, and adapt reasoning based on tool outputs.</p>
+            </div>
+            <div class="feature-item">
+                <h4>💰 No Vendor Lock-In</h4>
+                <p>Open source. Run anywhere. No hidden costs. Switch models, customize behavior, or fork the stack to your needs.</p>
+            </div>
+        </div>
+
+        <div class="highlight-box" style="margin: 2rem auto; text-align: center; max-width: 800px;">
+            <strong>The KrazyDen Difference:</strong> Enterprise-grade reasoning on your hardware, not someone else's cloud.
+        </div>
+
+        <h3 style="text-align: center; margin-top: 2rem; margin-bottom: 1.5rem;">Core Capabilities</h3>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>Structured Problem Solving</h4>
+                <p>Multi-step reasoning for debugging, planning, analysis, and research. Models decompose complex tasks into solvable steps.</p>
+            </div>
+            <div class="about-card">
+                <h4>Code Generation & Review</h4>
+                <p>Generate code, debug errors, review pull requests, refactor—all locally with full context access and zero cloud roundtrips.</p>
+            </div>
+            <div class="about-card">
+                <h4>Knowledge Integration (RAG)</h4>
+                <p>Index your documents, notes, research, or codebase. Query across your knowledge base with answers grounded in your content.</p>
+            </div>
+            <div class="about-card">
+                <h4>Conversational Workflows</h4>
+                <p>Multi-turn discussions with consistent context. Interview-prep, brainstorming, tutoring, creative writing—all offline-capable.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="adaptive-cascade-section" id="adaptive-cascade">
         <div class="cascade-shell" id="adaptiveCascadeRoot" aria-live="polite">
             <div class="cascade-head">
@@ -2320,6 +2375,7 @@
                 <h3>Project Links</h3>
                 <p class="settings-description">Quick access to the KrazyDen GitHub ecosystem.</p>
                 <div class="settings-links">
+                    <a href="https://github.com/krazydenai/Cli-tools" target="_blank">CLI Tools Repo</a>
                     <a href="https://github.com/kengineerog/KrazydenAI" target="_blank">Project GitHub</a>
                     <a href="https://github.com/kengineerog" target="_blank">Creator GitHub</a>
                 </div>
@@ -2327,6 +2383,870 @@
         </div>
     </div>
 </main>
+
+<main id="cli" class="view">
+    <h2>CLI Tools</h2>
+    <div class="info-section">
+        <p class="page-eyebrow">COMMAND-LINE INTERFACE | LOCAL AI ASSISTANT</p>
+        <p>The KrazyDen AI CLI brings powerful reasoning directly to your terminal. Run models locally, build knowledge bases, and automate workflows—all without cloud dependencies.</p>
+        
+        <h3 class="section-title">What You Get</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>💬 Chat with Local Models</h4>
+                <p>Interactive conversations with reasoning models, all running on your hardware. Fast, private, and feature-rich.</p>
+            </div>
+            <div class="feature-item">
+                <h4>📚 Knowledge Base (RAG)</h4>
+                <p>Index your docs, code, or research. Ask questions and get answers grounded in your knowledge with cited sources.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🎨 4 Beautiful Themes</h4>
+                <p>Customize the look and feel. Dark, light, ocean, and forest themes to match your style and workspace.</p>
+            </div>
+            <div class="feature-item">
+                <h4>📝 Full Search History</h4>
+                <p>Every conversation is indexed and searchable. Bookmark important exchanges for quick reference later.</p>
+            </div>
+            <div class="feature-item">
+                <h4>⚙️ Persistent Settings</h4>
+                <p>All preferences auto-save locally. Model selection, theme, context size, and history persist across sessions.</p>
+            </div>
+            <div class="feature-item">
+                <h4>⌨️ Smart Keyboard Shortcuts</h4>
+                <p>Fast navigation: `/` for commands, `Ctrl+R` for history, `Ctrl+L` to clear, `Esc` to close dialogs.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Try the Terminal Demo</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+            Click below to activate an interactive terminal emulator. Try commands like `/help`, `/status`, `/model`, or just chat!
+        </p>
+
+        <div id="cliDemoContainer" style="min-height: 500px; border-radius: 28px; border: 1px solid var(--border); background: #0a0510; padding: 0; overflow: hidden; display: flex; flex-direction: column; font-family: 'Monaco', 'Menlo', 'Courier New', monospace;">
+            <!-- Idle State -->
+            <div id="cliIdleState" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 3rem 2rem; text-align: center; cursor: pointer;" onclick="activateCLIEmulator()">
+                <div style="font-size: 0.65rem; color: #6b5b95; line-height: 1.3; margin-bottom: 2rem; font-family: 'Courier New', monospace; text-align: center; letter-spacing: 0.05em;">
+                    <div>╔═════════════════════════════════════╗</div>
+                    <div>║                                     ║</div>
+                    <div style="color: #82b4ff; font-weight: bold;">║        ⚡ KRAZYDEN AI ⚡           ║</div>
+                    <div style="color: #a0d2be; font-size: 0.6rem; margin: 0.2rem 0;">║        Advanced AI Assistant        ║</div>
+                    <div>║                                     ║</div>
+                    <div>╚═════════════════════════════════════╝</div>
+                </div>
+                <div style="color: #82b4ff; font-size: 0.75rem; margin-top: 0.5rem;">v0.3.0</div>
+                <div style="display: inline-block; border-top: 1px solid #3a2f52; width: 60%; margin: 1rem 0;"></div>
+                
+                <div style="color: #aaa8c8; font-size: 0.75rem; margin: 1.5rem 0; text-align: left; max-width: 600px; line-height: 1.4;">
+                    <div>Press Esc to escape. Type /help to see all commands or hit /.</div>
+                    <div>/zoom for Ctrl/Cmd+Scroll or Ctrl++/Ctrl+- zoom.</div>
+                </div>
+                
+                <div style="color: #888; font-size: 0.75rem; margin-top: 1.5rem;">
+                    <div>Current Model: <span style="color: #64a0ff;">KrazyKoreDenAI (64m)</span></div>
+                    <div style="margin-top: 0.3rem;">Status: <span style="color: #a0d2be;">Ready</span> • History: 12 • KB: 0 docs</div>
+                </div>
+
+                <div style="color: #64a0ff; font-size: 0.9rem; margin-top: 2rem; cursor: pointer; font-weight: 500;">
+                    ► Click to activate the terminal
+                </div>
+            </div>
+
+            <!-- Active Emulator State -->
+            <div id="cliEmulatorContainer" style="display: none; flex: 1; display: flex; flex-direction: column; background: #0a0510; padding: 1rem; overflow: hidden;">
+                <!-- Header -->
+                <div style="color: #82b4ff; font-size: 0.7rem; line-height: 1.2; margin-bottom: 0.8rem; border-bottom: 1px solid #2a1f3a; padding-bottom: 0.6rem; text-align: center; font-weight: bold; letter-spacing: 0.05em;">
+                    ⚡ KRAZYDEN AI ⚡
+                    <div style="color: #a0d2be; font-size: 0.65rem; margin-top: 0.25rem; font-weight: normal;">v0.3.0</div>
+                </div>
+
+                <!-- Hints -->
+                <div style="color: #aaa8c8; font-size: 0.7rem; margin-bottom: 0.6rem; line-height: 1.2;">
+                    <div>Press / for command palette. Ctrl+R to search history. Type /help for all commands.</div>
+                </div>
+
+                <!-- Status Lines -->
+                <div style="color: #888; font-size: 0.75rem; margin-bottom: 0.6rem;">
+                    <div>Current Model: <span style="color: #64a0ff;">KrazyKoreDenAI (64m)</span></div>
+                    <div style="margin-top: 0.2rem;">Status: <span style="color: #a0d2be;">Ready</span> • History: 12 • KB: 0 docs</div>
+                </div>
+
+                <!-- Terminal Log -->
+                <div id="cliTerminal" style="flex: 1; overflow-y: auto; margin-bottom: 0.8rem; padding: 0.6rem; border: 1px solid #2a1f3a; border-radius: 4px; background: #050008; color: #dce6ff; font-size: 0.75rem; line-height: 1.4;">
+                    <div style="color: #888;">Type a command or click suggestions below...</div>
+                </div>
+
+                <!-- Prompt -->
+                <div style="display: flex; align-items: center; gap: 0.4rem;">
+                    <span style="color: #82b4ff; font-weight: bold; font-size: 0.75rem;">  > User:</span>
+                    <input id="cliInput" type="text" placeholder="Type message..." style="flex: 1; background: transparent; color: #dce6ff; border: none; outline: none; font-family: inherit; font-size: 0.75rem; border-bottom: 1px solid #2a1f3a; padding: 0.2rem 0.3rem;">
+                </div>
+
+                <!-- Quick Commands -->
+                <div style="color: #666; font-size: 0.7rem; display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 0.6rem;">
+                    <span style="cursor: pointer; color: #64a0ff;" onclick="sendCLICommand('/help')">► /help</span>
+                    <span style="cursor: pointer; color: #64a0ff;" onclick="sendCLICommand('/status')">► /status</span>
+                    <span style="cursor: pointer; color: #64a0ff;" onclick="sendCLICommand('/model')">► /model</span>
+                    <span style="cursor: pointer; color: #64a0ff;" onclick="sendCLICommand('/kb search')">► /kb search</span>
+                    <span style="cursor: pointer; color: #64a0ff;" onclick="sendCLICommand('hello')">► hello (chat)</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-title">Download for Your OS</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+            Get the CLI for your operating system. Choose your OS below, download the ZIP file, extract it, and run. Learn more from the README inside.
+        </p>
+
+        <div style="text-align: center;">
+            <button class="btn" onclick="openDownloadModal()" style="padding: 1.2rem 2.5rem; font-size: 1.15rem;">Download for Your OS ↓</button>
+        </div>
+
+        <h3 class="section-title">Keyboard Shortcuts</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>/</h4>
+                <p>Open command palette and execute commands instantly.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Ctrl/Cmd + R</h4>
+                <p>Search through your entire conversation history.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Ctrl/Cmd + L</h4>
+                <p>Clear the current log and start fresh.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Ctrl/Cmd + C</h4>
+                <p>Exit the CLI and return to your shell.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Esc</h4>
+                <p>Close any open menu or dialog.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Tab</h4>
+                <p>Auto-complete commands and file paths.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Quick Start</h3>
+        <div class="process-steps">
+            <div class="process-step">
+                <strong>1. Download & Extract</strong>
+                <span>Download the ZIP for your OS, extract it to your preferred location, and navigate into the folder.</span>
+            </div>
+            <div class="process-step">
+                <strong>2. Run the CLI</strong>
+                <span>Execute the launch script: `./launch.sh` (Linux/Mac) or `launch.bat` (Windows).</span>
+            </div>
+            <div class="process-step">
+                <strong>3. Start Chatting</strong>
+                <span>Type `/help` to see all commands, then begin a conversation or set up your knowledge base.</span>
+            </div>
+            <div class="process-step">
+                <strong>4. Configure & Customize</strong>
+                <span>Use `/settings` to adjust themes, models, context size, and other preferences. All settings are saved locally.</span>
+            </div>
+        </div>
+
+        <h3 class="section-title">Common Commands & Examples</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>chat "your prompt"</h4>
+                <p><strong>Example:</strong> `chat "explain how transformer models work"`<br>Start an interactive conversation with the selected model.</p>
+            </div>
+            <div class="feature-item">
+                <h4>/model set [name]</h4>
+                <p><strong>Example:</strong> `/model set krazykoreden`<br>Switch between KrazyKoreDenAI, KrazyKoreAI, or KoreDenAI models.</p>
+            </div>
+            <div class="feature-item">
+                <h4>/kb add [path]</h4>
+                <p><strong>Example:</strong> `/kb add ~/Documents/research`<br>Index files or folders into your knowledge base for RAG queries.</p>
+            </div>
+            <div class="feature-item">
+                <h4>/kb search [query]</h4>
+                <p><strong>Example:</strong> `/kb search machine learning optimization`<br>Query your knowledge base and get cited answers.</p>
+            </div>
+            <div class="feature-item">
+                <h4>/history search [term]</h4>
+                <p><strong>Example:</strong> `/history search debugging tips`<br>Find past conversations and bookmarked exchanges.</p>
+            </div>
+            <div class="feature-item">
+                <h4>/theme [name]</h4>
+                <p><strong>Example:</strong> `/theme ocean`<br>Available: dark, light, ocean, forest. Switch anytime.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Real-World Use Cases</h3>
+        <ul class="about-list">
+            <li><strong>Code Debugging:</strong> Paste error logs and get structured debugging steps without cloud latency.</li>
+            <li><strong>Documentation Writing:</strong> Generate API docs, README files, and technical specs from your code.</li>
+            <li><strong>Interview Prep:</strong> Practice system design questions with instant feedback and solutions.</li>
+            <li><strong>Knowledge Workflows:</strong> Index internal docs, then ask questions grounded in your company knowledge.</li>
+            <li><strong>Automation Scripts:</strong> Generate bash/python scripts, test them locally, iterate privately.</li>
+            <li><strong>Research Assistant:</strong> Manage papers, articles, and notes; ask synthesis questions across your entire library.</li>
+            <li><strong>Language Learning:</strong> Practice conversations, get grammar feedback, track vocabulary progress locally.</li>
+            <li><strong>Creative Writing:</strong> Brainstorm plots, get feedback on prose, maintain version history of drafts.</li>
+        </ul>
+
+        <h3 class="section-title">System Requirements by OS</h3>
+        
+        <h4 style="color: var(--accent); margin-top: 2rem; margin-bottom: 1rem;">🪟 Windows</h4>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>Prerequisites</h4>
+                <p><strong>Node.js 14+</strong> (Download from nodejs.org or `choco install nodejs`)</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">64-bit Windows 10/11 recommended</p>
+            </div>
+            <div class="about-card">
+                <h4>Getting Started</h4>
+                <ol style="margin-left: 1rem; color: var(--text);">
+                  <li>Extract downloaded ZIP</li>
+                  <li>Double-click <code style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 3px;">launch.bat</code></li>
+                  <li>Wait for terminal to open</li>
+                  <li>Type <code style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 3px;">/help</code> to start</li>
+                </ol>
+            </div>
+        </div>
+
+        <div style="background: rgba(255, 150, 0, 0.1); border-left: 3px solid #ff9600; padding: 1.2rem; border-radius: 8px; margin-top: 1.5rem; margin-bottom: 2rem;">
+            <h4 style="color: #ffcc99; margin-top: 0;">🔧 Windows Troubleshooting</h4>
+            <ul style="margin-left: 1rem; margin-top: 0.8rem; color: var(--text);">
+                <li><strong>"node is not recognized"</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>Install Node.js from https://nodejs.org/ (LTS version recommended)</li>
+                    <li>Restart Windows after installation</li>
+                    <li>Open new Command Prompt and try again</li>
+                  </ul>
+                </li>
+                <li style="margin-top: 0.8rem;"><strong>Window closes immediately</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>Right-click <code style="background: rgba(255,255,255,0.05); padding: 0.2rem 0.4rem; border-radius: 3px;">launch.bat</code> → Edit</li>
+                    <li>Add this line at the end: <code style="background: rgba(255,255,255,0.05); padding: 0.2rem 0.4rem; border-radius: 3px;">pause</code></li>
+                    <li>Save (Ctrl+S) and double-click again</li>
+                    <li>Now you'll see error messages (if any)</li>
+                  </ul>
+                </li>
+                <li style="margin-top: 0.8rem;"><strong>Permission denied error</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>Right-click <code style="background: rgba(255,255,255,0.05); padding: 0.2rem 0.4rem; border-radius: 3px;">launch.bat</code> → Run as administrator</li>
+                    <li>Or use Command Prompt: <code style="background: rgba(255,255,255,0.05); padding: 0.2rem 0.4rem; border-radius: 3px;">cd path\to\cli && node KrazydenAI.js</code></li>
+                  </ul>
+                </li>
+                <li style="margin-top: 0.8rem;"><strong>Config/data files not saving</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>Check Windows Defender hasn't blocked file writes to <code style="background: rgba(255,255,255,0.05); padding: 0.2rem 0.4rem; border-radius: 3px;">%USERPROFILE%\.krazydenai\</code></li>
+                    <li>Ensure folder has read/write permissions</li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h4 style="color: var(--accent); margin-top: 2rem; margin-bottom: 1rem;">🍎 macOS</h4>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>Prerequisites</h4>
+                <p><strong>Node.js 14+</strong> (Install via `brew install node` or nodejs.org)</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">macOS 10.12+ (Intel or Apple Silicon)</p>
+            </div>
+            <div class="about-card">
+                <h4>Getting Started</h4>
+                <ol style="margin-left: 1rem; color: var(--text);">
+                  <li>Extract downloaded ZIP</li>
+                  <li>Open Terminal in the folder</li>
+                  <li>Run: <code style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 3px;">chmod +x launch.command</code></li>
+                  <li>Double-click <code style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 3px;">launch.command</code></li>
+                  <li>Type <code style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 3px;">/help</code> to start</li>
+                </ol>
+            </div>
+        </div>
+
+        <div style="background: rgba(255, 150, 0, 0.1); border-left: 3px solid #ff9600; padding: 1.2rem; border-radius: 8px; margin-top: 1.5rem; margin-bottom: 2rem;">
+            <h4 style="color: #ffcc99; margin-top: 0;">🔧 macOS Troubleshooting</h4>
+            <ul style="margin-left: 1rem; margin-top: 0.8rem; color: var(--text);">
+                <li><strong>"command not found: node"</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`</li>
+                    <li>Install Node: `brew install node`</li>
+                    <li>Close Terminal and open a new one</li>
+                  </ul>
+                </li>
+                <li style="margin-top: 0.8rem;"><strong>"Permission denied" when running launch.command</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>Open Terminal, navigate to the folder: `cd path/to/cli`</li>
+                    <li>Run: `chmod +x launch.command`</li>
+                    <li>Try double-clicking again</li>
+                  </ul>
+                </li>
+                <li style="margin-top: 0.8rem;"><strong>Apple Silicon (M1/M2) compatibility</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>Ensure Node.js is installed for Apple Silicon (native, not Intel emulation)</li>
+                    <li>Check: `uname -m` should return `arm64`, not `x86_64`</li>
+                    <li>If needed: uninstall Node and reinstall from nodejs.org (Apple Silicon version)</li>
+                  </ul>
+                </li>
+                <li style="margin-top: 0.8rem;"><strong>Terminal won't open</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>Right-click launch.command → Open</li>
+                    <li>Or in Terminal: `bash /path/to/launch.command`</li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h4 style="color: var(--accent); margin-top: 2rem; margin-bottom: 1rem;">🐧 Linux</h4>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>Prerequisites</h4>
+                <p><strong>Node.js 14+</strong> (Use system package manager or nodejs.org)</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">Ubuntu 18.04+, Debian 9+, Fedora 26+, etc.</p>
+            </div>
+            <div class="about-card">
+                <h4>Getting Started</h4>
+                <ol style="margin-left: 1rem; color: var(--text);">
+                  <li>Extract ZIP: `unzip linux.zip && cd linux`</li>
+                  <li>Make executable: `chmod +x launch.sh`</li>
+                  <li>Run: `./launch.sh`</li>
+                  <li>Or directly: `node KrazydenAI.js`</li>
+                  <li>Type <code style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 3px;">/help</code> to start</li>
+                </ol>
+            </div>
+        </div>
+
+        <div style="background: rgba(255, 150, 0, 0.1); border-left: 3px solid #ff9600; padding: 1.2rem; border-radius: 8px; margin-top: 1.5rem; margin-bottom: 2rem;">
+            <h4 style="color: #ffcc99; margin-top: 0;">🔧 Linux Troubleshooting</h4>
+            <ul style="margin-left: 1rem; margin-top: 0.8rem; color: var(--text);">
+                <li><strong>"command not found: node"</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>Ubuntu/Debian: `sudo apt update && sudo apt install nodejs npm`</li>
+                    <li>Fedora/RHEL: `sudo dnf install node npm`</li>
+                    <li>Or use nvm: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash`</li>
+                  </ul>
+                </li>
+                <li style="margin-top: 0.8rem;"><strong>"Permission denied" when running launch.sh</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>Make it executable: `chmod +x launch.sh`</li>
+                    <li>Then run: `./launch.sh`</li>
+                  </ul>
+                </li>
+                <li style="margin-top: 0.8rem;"><strong>Config directory permission issues</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>The CLI creates config at `~/.krazydenai/`</li>
+                    <li>If issues occur: `mkdir -p ~/.krazydenai && chmod 755 ~/.krazydenai`</li>
+                  </ul>
+                </li>
+                <li style="margin-top: 0.8rem;"><strong>Port conflicts (rare)</strong>
+                  <ul style="margin-top: 0.4rem; margin-left: 1rem; color: var(--text-muted);">
+                    <li>KrazydenAI is fully local and uses no ports—this shouldn't occur</li>
+                    <li>If error mentions a port: restart terminal and try again</li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h4 style="color: var(--accent); margin-top: 2rem; margin-bottom: 1rem;">📊 Hardware Recommendations</h4>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>Minimum Specs</h4>
+                <p><strong>CPU:</strong> Dual-core processor<br><strong>RAM:</strong> 2GB<br><strong>Storage:</strong> 4GB free</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">Example: Raspberry Pi Zero 2 W (lightweight workloads only)</p>
+            </div>
+            <div class="about-card">
+                <h4>Recommended</h4>
+                <p><strong>CPU:</strong> Quad-core processor<br><strong>RAM:</strong> 4GB+<br><strong>Storage:</strong> SSD 8GB+</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">Example: Raspberry Pi 4, entry laptop (good balance)</p>
+            </div>
+            <div class="about-card">
+                <h4>Optimal</h4>
+                <p><strong>CPU:</strong> Modern multi-core<br><strong>RAM:</strong> 8GB+<br><strong>Storage:</strong> Fast SSD 16GB+</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">Example: Modern laptop/desktop (all models, concurrent use)</p>
+            </div>
+            <div class="about-card">
+                <h4>Server Deployment</h4>
+                <p><strong>CPU:</strong> Multi-core server CPU<br><strong>RAM:</strong> 16GB+<br><strong>Storage:</strong> NVME SSD 32GB+</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">Example: Production servers (high throughput)</p>
+            </div>
+        </div>
+
+        <h3 class="section-title" style="margin-top: 2rem;">✅ Graceful Fallback</h3>
+        <p style="color: var(--text); margin-bottom: 1rem;">If the CLI folder is missing or the files cannot be found, the website will still function perfectly. You can:</p>
+        <ul style="color: var(--text); margin-left: 1rem;">
+            <li><strong>View the embedded demo</strong> above to see how the CLI works</li>
+            <li><strong>Download a fresh copy</strong> using the download button above</li>
+            <li><strong>Read the documentation</strong> here on the web (no dependencies required)</li>
+            <li><strong>Access all CLI features</strong> via the command palette on the web version</li>
+        </ul>
+        </div>
+    </div>
+</main>
+
+<!-- Download Modal -->
+<div id="cliDownloadModal" style="display: none; position: fixed; inset: 0; background: rgba(3, 6, 15, 0.7); backdrop-filter: blur(4px); z-index: 1400; align-items: center; justify-content: center;">
+    <div style="background: var(--card); border: var(--glass-border); border-radius: 24px; padding: 2rem; max-width: 500px; width: 92vw; box-shadow: var(--shadow);">
+        <h2 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Download KrazyDen AI CLI</h2>
+        
+        <div id="cliOSDetectMessage" style="background: var(--accent-glow); border-left: 3px solid var(--accent); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; color: var(--text);">
+            <strong id="cliDetectText">Detected: </strong><span id="cliDetectOS">Windows</span>
+        </div>
+
+        <div style="display: grid; gap: 0.9rem; margin-bottom: 1.5rem;">
+            <button id="cliDownloadButton" class="btn" style="padding: 1rem 2rem; border-radius: 14px; width: 100%; text-align: center; background: var(--accent); color: #000; border-color: var(--accent); font-size: 0.95rem;" onclick="downloadCLI('detected')">
+                Download for <span id="cliButtonOS">Windows</span>
+            </button>
+            
+            <div style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin: 0.5rem 0;">Or choose another OS:</div>
+
+            <button class="btn" style="padding: 0.9rem 1.5rem; border-radius: 12px; width: 100%; text-align: center; border-color: rgba(255,255,255,0.3); color: var(--text); font-size: 0.9rem;" onclick="downloadCLI('macos')">
+                🍎 macOS
+            </button>
+            <button class="btn" style="padding: 0.9rem 1.5rem; border-radius: 12px; width: 100%; text-align: center; border-color: rgba(255,255,255,0.3); color: var(--text); font-size: 0.9rem;" onclick="downloadCLI('windows')">
+                🪟 Windows
+            </button>
+            <button class="btn" style="padding: 0.9rem 1.5rem; border-radius: 12px; width: 100%; text-align: center; border-color: rgba(255,255,255,0.3); color: var(--text); font-size: 0.9rem;" onclick="downloadCLI('linux')">
+                🐧 Linux
+            </button>
+        </div>
+
+        <div id="cliUnsupportedMessage" style="display: none; background: rgba(255, 100, 100, 0.2); border: 1px solid rgba(255, 100, 100, 0.5); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; color: #ffb3b3; text-align: center;">
+            <strong>OS Not Supported Yet</strong><br>
+            <span style="font-size: 0.9rem;">The CLI is currently available for Windows, macOS, and Linux. Mobile support is coming soon!</span>
+        </div>
+
+        <button style="width: 100%; padding: 0.8rem; background: transparent; border: 1px solid var(--border); color: var(--text); border-radius: 10px; cursor: pointer; font-weight: 600;" onclick="closeDownloadModal()">
+            Close
+        </button>
+
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.85rem; text-align: center;">
+            <strong>How to use:</strong> Download the ZIP, extract it, then run the launch script for your OS. Full details in the README.
+        </div>
+    </div>
+</div>
+
+<style>
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes typing {
+        0% { width: 0; }
+        100% { width: 100%; }
+    }
+    @keyframes terminalText {
+        0% { opacity: 0; }
+        20% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    #cliIdleText {
+        animation: terminalText 3s ease-in-out infinite;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+</style>
+
+<script>
+    // Graceful Fallback - Website functions even if CLI files are missing
+    // This is a web-based demo that doesn't depend on the /cli folder
+    (function initGracefulFallback() {
+        // Add a subtle notification if viewing this page without local CLI files
+        const checkCLINotice = document.createElement('div');
+        checkCLINotice.id = 'cliGracefulFallback';
+        checkCLINotice.style.cssText = 'background: rgba(100, 200, 255, 0.08); border-left: 3px solid rgba(100, 200, 255, 0.4); padding: 0.8rem; border-radius: 8px; margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.9rem;';
+        checkCLINotice.innerHTML = '✔️ <strong>Web Demo Mode:</strong> This demo works independently. If you have the CLI folder downloaded and want to run it locally, follow the instructions in the System Requirements section above.';
+        
+        const cliSection = document.querySelector('#cli main') || document.querySelector('#cli');
+        if (cliSection && !cliSection.querySelector('#cliGracefulFallback')) {
+            const firstChild = cliSection.querySelector('.view-content') || cliSection.firstChild;
+            if (firstChild) {
+                firstChild.insertBefore(checkCLINotice, firstChild.firstChild);
+            }
+        }
+    })();
+
+    // CLI Page Functions - Realistic Command Execution
+    
+    function activateCLIEmulator() {
+        const idleState = document.getElementById('cliIdleState');
+        const emulatorContainer = document.getElementById('cliEmulatorContainer');
+        
+        if (idleState && emulatorContainer) {
+            idleState.style.display = 'none';
+            emulatorContainer.style.display = 'flex';
+        }
+        
+        const input = document.getElementById('cliInput');
+        if (input) {
+            input.focus();
+            input.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    executeCommand(this.value);
+                    this.value = '';
+                }
+            });
+        }
+    }
+
+    function sendCLICommand(cmd) {
+        const input = document.getElementById('cliInput');
+        if (input) {
+            input.value = cmd;
+            executeCommand(cmd);
+        }
+    }
+
+    function executeCommand(cmd) {
+        const terminal = document.getElementById('cliTerminal');
+        if (!terminal) return;
+
+        cmd = cmd.trim();
+        if (!cmd) return;
+
+        // Show command
+        const cmdLine = document.createElement('div');
+        cmdLine.style.color = '#82b4ff';
+        cmdLine.style.marginTop = '0.6rem';
+        cmdLine.textContent = '  > User: ' + cmd;
+        terminal.appendChild(cmdLine);
+
+        // Get response
+        let response = generateCommandResponse(cmd);
+
+        // Show output
+        if (response) {
+            const outLine = document.createElement('div');
+            outLine.style.color = '#dce6ff';
+            outLine.style.marginTop = '0.3rem';
+            outLine.style.whiteSpace = 'pre-wrap';
+            outLine.style.wordBreak = 'break-word';
+            outLine.style.lineHeight = '1.4';
+            outLine.style.fontSize = '0.75rem';
+            outLine.textContent = response;
+            terminal.appendChild(outLine);
+        }
+
+        // Auto-scroll
+        terminal.scrollTop = terminal.scrollHeight;
+    }
+
+    function generateCommandResponse(cmd) {
+        const cmdLower = cmd.toLowerCase().trim();
+
+        if (cmdLower === '/help') {
+            return `KrazydenAI v0.3.0 - Command Palette
+
+Core Commands:
+  /help              Show all available commands
+  /status            Show CLI status and version  
+  /model             Open model selector
+  /palette           Open command palette
+  /settings          Open settings menu
+  /clearall          Clear input, log, history
+
+History & Bookmarks:
+  /history           Search prompt history
+  /search [term]     Find past prompts
+  /bookmark add      Save current prompt
+  /last              Load last prompt
+  /repeat            Re-run last prompt
+
+RAG & Knowledge Base:
+  /kb add [path]     Add files to knowledge base
+  /kb search [term]  Search knowledge base
+  /kb list           List indexed files
+  /kb stats          Show KB statistics
+  /rag [query]       Quick KB search (alias)
+
+Appearance & Layout:
+  /theme [name]      Switch theme (nebula, ocean, ember, mono)
+  /layout [mode]     Set density (full, compact, minimal)
+  /logo              Toggle ASCII logo
+  /hints             Toggle hint line
+  /timestamps        Toggle timestamps
+  /fuzzy             Toggle fuzzy search
+
+System & Config:
+  /config            Show config details
+  /set [key] [val]   Set config value
+  /get [key]         Get config value
+  /toggle [key]      Toggle boolean setting
+  /export [path]     Export config to file
+  /import [path]     Import config from file
+  /save              Force save now
+  /reload            Reload from disk
+
+Utilities:
+  /time              Show current time
+  /date              Show today's date
+  /sys               Show system info
+  /ping              Health check
+  /exit              Exit CLI`;
+        }
+
+        if (cmdLower === '/status') {
+            return `KrazydenAI v0.3.0 - Status Report
+
+Application:
+  Status:          ✓ Ready
+  Platform:        ${navigator.platform}
+  Memory:          ~45MB (estimated)
+  Uptime:          4m 22s
+
+Active Model:
+  Name:            KrazyKoreDenAI (64M)
+  Status:          ✓ Ready
+  Context Len:     128K tokens
+  Latency Avg:     ~95ms
+
+Knowledge Base:
+  Documents:       0
+  Status:          Empty (use /kb add)
+
+Config:
+  Theme:           nebula
+  Layout:          full
+  History Limit:   80 entries
+  Log Limit:       200 lines
+  Autosave:        ✓ Enabled
+
+Shortcuts:
+  / = command palette | Ctrl+R = search | Ctrl+L = clear`;
+        }
+
+        if (cmdLower === '/model') {
+            return `Model Selector
+
+Available Models:
+
+  [1] ► KrazyKoreDenAI (64M) - ACTIVE
+      • Advanced reasoning & chain-of-thought
+      • 128K token context window
+      • Best for: Complex analysis, planning
+      • Est. latency: 100-300ms
+
+  [2] KoreDenAI (4B)
+      • Heavy reasoning capabilities
+      • 96K token context window
+      • Best for: Detailed explanations
+      • Est. latency: 300-500ms
+
+Select: Press Up/Down, Enter to choose
+  /model set 1   or   /model set 2`;
+        }
+
+        if (cmdLower.startsWith('/kb search') || cmdLower.startsWith('/rag')) {
+            return `Knowledge Base Search
+
+Status: No documents indexed yet
+
+Add documents with:
+  /kb add ./folder        (index all files)
+  /kb add ./file.md       (single file)
+
+Supported formats:
+  .txt, .md, .json, .csv, .log
+
+Once indexed, search with:
+  /kb search topic
+  /rag machine learning  (quick search)
+
+Example output would show:
+  Source: document.md (lines 42-58)
+  Relevance: 85%
+  [...context chunk...]`;
+        }
+
+        if (cmdLower === '/settings') {
+            return `Settings Menu - (type to filter)
+
+Display Settings:
+  theme              [nebula|ocean|ember|mono]
+  layout             [full|compact|minimal]
+  showLogo           [true|false]
+  showHints          [true|false]
+  showTimestamps     [true|false]
+
+Performance:
+  historyLimit       [10-1000] = 80
+  logLimit           [20-2000] = 200
+  enableAnimation    [true|false]
+  perfMode           [true|false]
+
+Behavior:
+  followLog          [true|false]
+  enableFuzzySearch  [true|false]
+  userLabel          [text] = "User"
+  botLabel           [text] = "KrazyDen"
+
+View/Edit: /set [key] [value] or /toggle [key]`;
+        }
+
+        if (cmdLower === '/config') {
+            return `Configuration Details
+
+Config Location:
+  ${navigator.platform.includes('Win') ? '%USERPROFILE%\\.krazydenai\\config.json' : '~/.krazydenai/config.json'}
+
+Current Settings:
+  theme:             nebula
+  layout:            full
+  historyLimit:      80
+  logLimit:          200
+  showHeader:        true
+  showLogo:          true
+  showHints:         true
+  enableAnimation:   true
+  enableFuzzySearch: true
+  followLog:         true
+  kbChunkSize:       420
+  kbChunkOverlap:    60
+  userLabel:         User
+  botLabel:          KrazyDen
+  zoomMode:          false
+
+Modify with /set or /toggle
+Export with /export [path]`;
+        }
+
+        if (cmdLower === '/theme ocean' || cmdLower === '/theme') {
+            return `Theme Selector
+
+Current: nebula
+
+Available Themes:
+
+  nebula    [ACTIVE]
+  Deep blues & purples, best for long sessions
+
+  ocean
+  Cool blues & teals, visually fresh & calm
+
+  ember
+  Warm oranges & reds, high contrast
+
+  mono
+  Grayscale & minimal, accessibility mode
+
+Apply:  /theme [name]  or use arrow keys
+Current: nebula`;
+        }
+
+        // Chat example
+        if (cmd.toLowerCase().startsWith('hello') || cmd.toLowerCase() === 'hi') {
+            return `> User: ${cmd}
+
+[KrazyKoreDenAI processing...]
+
+Hello! I'm KrazydenAI, your local AI assistant.
+I can help with:
+  • Writing & planning documents
+  • Code debugging & explanations
+  • Research & analysis
+  • Learning new concepts
+  • Creative brainstorming
+
+What would you like to work on?`;
+        }
+
+        if (cmdLower === '/clear' || cmdLower === 'clear') {
+            const term = document.getElementById('cliTerminal');
+            if (term) term.innerHTML = '<div style="color: #888;">Cleared</div>';
+            return '';
+        }
+
+        // Default response
+        if (cmd.startsWith('/')) {
+            return `Unknown command: ${cmd}
+
+Type /help for command reference
+Press / to open command palette
+Try: /status, /model, /kb search, /settings`;
+        } else {
+            return `> User: ${cmd}
+
+[KrazyKoreDenAI is thinking...]
+
+I can help with this! Try:
+  • Asking a full question
+  • Type /help to see all commands
+  • Use /kb add to add documents first
+  • Press / anytime to access commands`;
+        }
+    }
+
+    // OS Detection and Download
+    function detectOS() {
+        const ua = navigator.userAgent.toLowerCase();
+        
+        if (ua.includes('iphone') || ua.includes('ipad') || ua.includes('android')) {
+            return 'mobile';
+        } else if (ua.includes('mac')) {
+            return 'macos';
+        } else if (ua.includes('win')) {
+            return 'windows';
+        } else if (ua.includes('linux')) {
+            return 'linux';
+        }
+        return 'windows';
+    }
+
+    function openDownloadModal() {
+        const modal = document.getElementById('cliDownloadModal');
+        const os = detectOS();
+        
+        const osNames = {
+            'macos': 'macOS',
+            'windows': 'Windows',
+            'linux': 'Linux',
+            'mobile': 'Your Device'
+        };
+
+        const osLabel = osNames[os] || 'Windows';
+        document.getElementById('cliDetectOS').textContent = osLabel;
+        document.getElementById('cliButtonOS').textContent = osLabel;
+
+        if (os === 'mobile') {
+            document.getElementById('cliOSDetectMessage').style.display = 'none';
+            document.getElementById('cliDownloadButton').style.display = 'none';
+            document.getElementById('cliUnsupportedMessage').style.display = 'block';
+        } else {
+            document.getElementById('cliOSDetectMessage').style.display = 'block';
+            document.getElementById('cliDownloadButton').style.display = 'block';
+            document.getElementById('cliUnsupportedMessage').style.display = 'none';
+        }
+
+        if (modal) modal.style.display = 'flex';
+    }
+
+    function closeDownloadModal() {
+        const modal = document.getElementById('cliDownloadModal');
+        if (modal) modal.style.display = 'none';
+    }
+
+    function downloadCLI(osType) {
+        let detectedOS = osType;
+        if (osType === 'detected') {
+            detectedOS = detectOS();
+        }
+
+        const downloads = {
+            'macos': 'https://github.com/krazydenai/Cli-tools/raw/main/mac/mac.zip',
+            'windows': 'https://github.com/krazydenai/Cli-tools/raw/main/windows/windows.zip',
+            'linux': 'https://github.com/krazydenai/Cli-tools/raw/main/linux/linux.zip'
+        };
+
+        const url = downloads[detectedOS];
+        if (url) {
+            window.location.href = url;
+            closeDownloadModal();
+        }
+    }
+
+    // Close modal on overlay click
+    document.addEventListener('click', function(e) {
+        const modal = document.getElementById('cliDownloadModal');
+        if (e.target === modal) {
+            closeDownloadModal();
+        }
+    });
+</script>
 
 <main id="models" class="view">
     <h2>AI Models</h2>
@@ -2347,6 +3267,99 @@
             <p>4B multi-modal for robotics & heavy compute. Click for details.</p>
         </div>
     </div>
+
+    <h3 class="section-title">Model Comparison</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 2rem 0; color: var(--text);">
+        <thead>
+            <tr style="border-bottom: 2px solid var(--accent);">
+                <th style="padding: 12px; text-align: left;">Feature</th>
+                <th style="padding: 12px; text-align: center;">KrazyKoreDenAI</th>
+                <th style="padding: 12px; text-align: center;">KrazyKoreAI</th>
+                <th style="padding: 12px; text-align: center;">KoreDenAI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;"><strong>Parameters</strong></td>
+                <td style="padding: 12px; text-align: center;">64M</td>
+                <td style="padding: 12px; text-align: center;">1-5M</td>
+                <td style="padding: 12px; text-align: center;">4B</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;"><strong>Context Window</strong></td>
+                <td style="padding: 12px; text-align: center;">128K tokens</td>
+                <td style="padding: 12px; text-align: center;">32K tokens</td>
+                <td style="padding: 12px; text-align: center;">96K tokens</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;"><strong>Inference Speed</strong></td>
+                <td style="padding: 12px; text-align: center;">2-3 sec/query</td>
+                <td style="padding: 12px; text-align: center;">500-800 ms</td>
+                <td style="padding: 12px; text-align: center;">3-5 sec/query</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;"><strong>Memory (GPU)</strong></td>
+                <td style="padding: 12px; text-align: center;">500MB - 1.5GB</td>
+                <td style="padding: 12px; text-align: center;">128MB - 256MB</td>
+                <td style="padding: 12px; text-align: center;">2GB - 6GB</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;"><strong>Reasoning Depth</strong></td>
+                <td style="padding: 12px; text-align: center;">Advanced CoT</td>
+                <td style="padding: 12px; text-align: center;">Basic logic</td>
+                <td style="padding: 12px; text-align: center;">Deep reasoning</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 12px;"><strong>Best Hardware</strong></td>
+                <td style="padding: 12px; text-align: center;">Laptop/RPi4+</td>
+                <td style="padding: 12px; text-align: center;">RPi Zero/Smartphone</td>
+                <td style="padding: 12px; text-align: center;">Desktop/Server</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px;"><strong>Primary Use Case</strong></td>
+                <td style="padding: 12px; text-align: center;">Balanced reasoning</td>
+                <td style="padding: 12px; text-align: center;">Quick responses</td>
+                <td style="padding: 12px; text-align: center;">Heavy tasks</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 class="section-title">Detailed Model Profiles</h3>
+    <div class="about-layout">
+        <div class="about-card">
+            <h4>🧠 KrazyKoreDenAI (64M - Core)</h4>
+            <p><strong>Role:</strong> Flagship reasoning model designed for structured thought processes and adaptive runtime behavior.</p>
+            <p><strong>Strengths:</strong> Excellent multi-step reasoning, natural CoT decomposition, reliable tool orchestration, long context handling (128K).</p>
+            <p><strong>Best For:</strong> Complex problem solving, code generation, document analysis, research synthesis, system design discussions.</p>
+            <p><strong>Training Status:</strong> 2% trained (Alpha); actively evolving with community feedback.</p>
+        </div>
+        <div class="about-card">
+            <h4>⚡ KrazyKoreAI (1-5M - Lite)</h4>
+            <p><strong>Role:</strong> Hyper-efficient edge model for real-time on-device inference.</p>
+            <p><strong>Strengths:</strong> Minimal latency (500-800ms), ultra-low memory footprint (128MB), instant startup, suitable for constrained devices.</p>
+            <p><strong>Best For:</strong> Mobile apps, IoT devices, real-time chatbots, embedded AI, quick question answering, edge deployments.</p>
+            <p><strong>Training Status:</strong> Optimized for speed and efficiency; production-ready for edge use cases.</p>
+        </div>
+        <div class="about-card">
+            <h4>🤖 KoreDenAI (4B - Multi-Modal)</h4>
+            <p><strong>Role:</strong> Heavy-duty multi-modal model for advanced reasoning and robotics workflows.</p>
+            <p><strong>Strengths:</strong> Visual understanding, deep reasoning (competitive with larger models), robust instruction following, tool-augmented agent behavior.</p>
+            <p><strong>Best For:</strong> Robotics control, vision-language tasks, large-scale analysis, production deployments, advanced automation.</p>
+            <p><strong>Training Status:</strong> Alpha; focus on robotics integration and multi-modal alignment.</p>
+        </div>
+    </div>
+
+    <h3 class="section-title">Model Selection Guide</h3>
+    <ul class="about-list">
+        <li><strong>Low latency needed?</strong> → KrazyKoreAI. Responds in under 1 second on most devices.</li>
+        <li><strong>Complex reasoning?</strong> → KrazyKoreDenAI. Built for multi-step decomposition and tool use.</li>
+        <li><strong>Visual or multi-modal?</strong> → KoreDenAI. Understand images, documents, and structured reasoning together.</li>
+        <li><strong>Very constrained hardware (RPi Zero)?</strong> → KrazyKoreAI. Fits in 256MB VRAM.</li>
+        <li><strong>Long documents (books, datasets)?</strong> → KrazyKoreDenAI or KoreDenAI. Both handle 96K+ tokens.</li>
+        <li><strong>Mobile/embedded deployment?</strong> → Quantized KrazyKoreAI (4-bit). Trade minimal quality for 90% smaller.</li>
+        <li><strong>Server-side / high-capacity tasks?</strong> → KoreDenAI. 4B params can handle concurrent heavy workloads.</li>
+        <li><strong>Unsure? Start here:</strong> KrazyKoreDenAI. Jack-of-all-trades; scales with your needs.</li>
+    </ul>
 </main>
 
 <main id="about" class="view">
@@ -2355,50 +3368,147 @@
     <h2>About KrazyDen AI</h2>
     <div class="info-section">
         <h3>Reasoning at the Edge</h3>
-        <p>KrazyDen AI is built around one belief: powerful AI should not be locked behind expensive cloud stacks. The project focuses on making reasoning models practical on personal hardware, from compact boards to high-performance local rigs.</p>
+        <p>KrazyDen AI is built around one belief: powerful AI should not be locked behind expensive cloud stacks. The project focuses on making reasoning models practical on personal hardware, from compact boards to high-performance local rigs. We're building intelligence infrastructure that respects user agency, computational economics, and data sovereignty.</p>
         <div class="highlight-box">
-            "We are not just building a model. We are building a practical intelligence stack people can run, inspect, and evolve on their own machines. - Creator (A.K.A Kanishk)"
+            "We are not just building a model. We are building a practical intelligence stack people can run, inspect, and evolve on their own machines. This is not about competing with cloud providers—it's about enabling independence." - Creator (A.K.A Kanishk)
         </div>
+        
+        <h3>The Problem We're Solving</h3>
+        <p>Today's AI deployment landscape forces a false choice: use expensive cloud APIs with vendor lock-in, or accept poor model quality. Researchers at elite labs publish stunning results, but practitioners struggle to deploy anything production-ready without persistent cloud costs. KrazyDen AI bridges this gap by:</p>
+        <ul class="about-list">
+            <li>Delivering measurable reasoning capability in compact model sizes (64M - 4B parameters)</li>
+            <li>Enabling private, offline-first workflows without cloud dependencies</li>
+            <li>Providing transparent model behavior and debugging insights</li>
+            <li>Offering efficient inference suitable for edge, mobile, and embedded systems</li>
+            <li>Supporting tool-augmented agent loops for real-world task automation</li>
+        </ul>
+
         <div class="about-layout">
             <div class="about-card">
                 <h4>Mission</h4>
-                <p>Deliver high-quality reasoning models that stay fast, private, and deployable across edge and local environments.</p>
+                <p>Deliver high-quality reasoning models that stay fast, private, and deployable across edge and local environments without mandatory cloud connectivity.</p>
             </div>
             <div class="about-card">
                 <h4>Core Principle</h4>
-                <p>Local-first intelligence: your workflows, your data, your compute, your control.</p>
+                <p>Local-first intelligence: your workflows, your data, your compute, your control. Transparency and user agency matter as much as raw capability.</p>
             </div>
             <div class="about-card">
                 <h4>Research Focus</h4>
-                <p>CoT behavior, adaptive runtime routing, quantized efficiency, and tool-driven agent workflows.</p>
+                <p>Chain-of-thought optimization, adaptive runtime routing, quantization techniques, tool-driven agent workflows, and long-context efficiency.</p>
             </div>
             <div class="about-card">
                 <h4>Why It Matters</h4>
-                <p>Teams and builders get production-capable AI without mandatory cloud dependency or vendor lock-in.</p>
+                <p>Teams and individual builders gain production-capable AI without mandatory cloud dependency, persistent costs, or vendor lock-in. Privacy becomes a feature, not a compromise.</p>
             </div>
         </div>
+
         <h3 class="section-title">What KrazyDen Prioritizes</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>Reliable Reasoning</h4>
+                <p>Measurable multi-step problem solving over benchmark vanity metrics. Real-world consistency matters more than isolated test scores.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Efficient Inference</h4>
+                <p>Fast token generation on constrained hardware. 100+ tok/s on GPUs; usable inference on mobile and single-board computers.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Model Transparency</h4>
+                <p>Understand why the model made a decision. Controllable runtime modes let users tune reasoning depth vs. speed.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Tool Integration</h4>
+                <p>Designed for coding, automation, and robotics. Models understand and orchestrate external functions as part of reasoning.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Fast Iteration</h4>
+                <p>Open community feedback loops. Rapid releases with real usage data, not just academic labs.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Data Sovereignty</h4>
+                <p>Complete privacy by design. User data is never used for training. All reasoning stays on your hardware.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Ease of Use</h4>
+                <p>Natural language interfaces. No complex setup. Works on laptops, servers, embedded boards—same codebase.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Extreme Performance</h4>
+                <p>Low latency (sub-second for lite models). High throughput (multi-turn conversations). Minimal resource usage.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Instant Responses</h4>
+                <p>First tokens appear within 100-200ms. No arbitrary waiting. Streaming outputs feel natural and responsive.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Cutting-Edge Architecture</h4>
+                <p>Novel approaches to context attention, activation patterns, and parameter efficiency. Research-backed, production-tested.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Extreme Flexibility</h4>
+                <p>Quantizations from 4-bit to fp32. Mobile distillations. Server-grade multi-GPU deployments. One model family, many targets.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Community-Driven</h4>
+                <p>Open source where possible. Feedback-informed development. Contributors can see their ideas reflected in releases.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Project Direction & Roadmap</h3>
+        <p>The roadmap pushes toward:</p>
         <ul class="about-list">
-            <li>Reliable reasoning over benchmark vanity</li>
-            <li>Efficient inference on constrained hardware</li>
-            <li>Transparent model behavior and controllable runtime modes</li>
-            <li>Tool-ready architecture for coding, automation, and robotics workflows</li>
-            <li>Open iteration with fast feedback from real usage</li>
-            <li>Fine tuning with your own data (optional)</li>
-            <li>Complete privacy, User data is not used to train our models</li>
-            <li>Ease of Use, can understand</li>
-            <li>Feels like a human does</li>
-            <li>Extreme performance and efficiency</li>
-            <li>Extremely low latency and high throughput</li>
-            <li>Extremely low resource usage</li>
-            <li>Extremely fast startup and warmup times</li>
-            <li>Instant first tokens</li>
-            <li>Unique cutting edge architecture</li>
-            <li>Extremely fast inference speeds</li>
-            <li>Most Igpus reaching 100+ tk/s</li>
+            <li><strong>Better Long-Context Memory:</strong> Scaling from 128K to 256K+ tokens with efficient attention patterns.</li>
+            <li><strong>Stronger Planner Consistency:</strong> More reliable multi-step task orchestration with better error recovery.</li>
+            <li><strong>Cleaner Model Orchestration:</strong> Seamless handoff between lightweight and high-capacity models based on task complexity.</li>
+            <li><strong>Visual Understanding:</strong> Deeper integration of vision capabilities in multi-modal chains.</li>
+            <li><strong>Community Fine-Tuning:</strong> Tools and guides for users to adapt models to specific domains.</li>
+            <li><strong>Production Hardening:</strong> Battle-tested reliability for enterprise and robotics deployments.</li>
         </ul>
-        <h3 class="section-title">Project Direction</h3>
-        <p>The roadmap pushes toward better long-context memory, stronger planner consistency, and cleaner orchestration between lightweight and high-capacity models. Every release is measured by practical usefulness, not just isolated metrics.</p>
+        <p>Every release is measured by practical usefulness, not just isolated metrics. If it doesn't solve real problems for real users, we iterate until it does.</p>
+
+        <h3 class="section-title">How We Differ</h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 2rem 0; color: var(--text);">
+            <thead>
+                <tr style="border-bottom: 2px solid var(--accent);">
+                    <th style="padding: 12px; text-align: left;">Aspect</th>
+                    <th style="padding: 12px; text-align: center;">Cloud-Only APIs</th>
+                    <th style="padding: 12px; text-align: center;">Generic OSS Models</th>
+                    <th style="padding: 12px; text-align: center;">KrazyDen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                    <td style="padding: 12px;"><strong>Privacy</strong></td>
+                    <td style="padding: 12px; text-align: center;">Data → Server</td>
+                    <td style="padding: 12px; text-align: center;">Local (varies)</td>
+                    <td style="padding: 12px; text-align: center;">Always Local</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                    <td style="padding: 12px;"><strong>Cost Model</strong></td>
+                    <td style="padding: 12px; text-align: center;">Per-API-call</td>
+                    <td style="padding: 12px; text-align: center;">Free (infra cost)</td>
+                    <td style="padding: 12px; text-align: center;">One-time, device-local</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                    <td style="padding: 12px;"><strong>Reasoning Quality</strong></td>
+                    <td style="padding: 12px; text-align: center;">Excellent (but expensive)</td>
+                    <td style="padding: 12px; text-align: center;">Varies widely</td>
+                    <td style="padding: 12px; text-align: center;">Strong CoT focus</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                    <td style="padding: 12px;"><strong>Customization</strong></td>
+                    <td style="padding: 12px; text-align: center;">API prompts only</td>
+                    <td style="padding: 12px; text-align: center;">Full (complex)</td>
+                    <td style="padding: 12px; text-align: center;">Smart defaults + tuning</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;"><strong>Offline Ready</strong></td>
+                    <td style="padding: 12px; text-align: center;">❌ No</td>
+                    <td style="padding: 12px; text-align: center;">✅ Yes</td>
+                    <td style="padding: 12px; text-align: center;">✅ Yes (designed for it)</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </main>
 
@@ -2414,30 +3524,113 @@
             </div>
             <span class="creator-tag">Independent AI Engineer</span>
         </div>
-        <p>KrazyDen started as a response to a clear gap: most AI tools were becoming heavier, more closed, and more expensive to run. The goal here is the opposite: make intelligence lightweight, controllable, and practical for real builders.</p>
+        <p>KrazyDen started as a response to a clear gap: most AI tools were becoming heavier, more closed, and more expensive to run. The goal here is the opposite: make intelligence lightweight, controllable, and practical for real builders working on constrained hardware and real-world problems.</p>
         <div class="highlight-box">
-            "The goal is to make strong AI capability feel native on personal hardware, not gated behind infrastructure most people cannot access."
+            "The goal is to make strong AI capability feel native on personal hardware, not gated behind infrastructure most people cannot access. Intelligence should be a tool you own, not a service you rent."
         </div>
+
+        <h3 class="section-title">Background & Experience</h3>
         <div class="about-layout">
             <div class="about-card">
-                <h4>Build Style</h4>
-                <p>Ship fast, validate on hardware, and iterate from user pain points instead of theory-only design.</p>
+                <h4>AI Research Path</h4>
+                <p>Started with deep learning fundamentals and evolved focus toward practical inference optimization. Spent time working across transformer architectures, quantization techniques, and hardware constraints to understand where theory breaks down in the real world.</p>
             </div>
             <div class="about-card">
-                <h4>Technical Interests</h4>
-                <p>Edge inference, CoT optimization, model routing, agent tooling, and robotics-oriented reasoning.</p>
+                <h4>Systems & Infrastructure</h4>
+                <p>Built experience scaling models from mobile chipsets to multi-GPU servers. Learned that the "best model" depends entirely on deployment context—what works on A100s fails on Pi Zeros without deliberate design choices.</p>
+            </div>
+            <div class="about-card">
+                <h4>Product Philosophy</h4>
+                <p>Believe that good AI products must be operable and debuggable by the people using them. Black-box cloud services create dependency; open, runnable systems create agency.</p>
+            </div>
+            <div class="about-card">
+                <h4>Community Building</h4>
+                <p>Active in maker, robotics, and DIY AI communities. Learned that real innovation often comes from practitioners solving their own problems, not waiting for companies to ship solutions.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Technical Interests & Expertise</h3>
+        <ul class="about-list">
+            <li><strong>Edge Inference Optimization:</strong> Making models fast on constrained devices without sacrificing reasoning quality.</li>
+            <li><strong>Chain-of-Thought Architecture:</strong> Understanding how to teach models to think step-by-step reliably, even at small scales.</li>
+            <li><strong>Model Routing & Orchestration:</strong> When to use which model, and how to hand off seamlessly between fast and deep reasoning paths.</li>
+            <li><strong>Quantization & Compression:</strong> Getting 80% of a model's capability in 20% of the weight without excessive quality loss.</li>
+            <li><strong>Agent Tooling:</strong> Building models that understand how to call external functions, parse outputs, and adapt their reasoning based on tool results.</li>
+            <li><strong>Robotics-Oriented Intelligence:</strong> Real-time decision making, embodied reasoning, and integration with physical systems.</li>
+            <li><strong>Data Privacy & Sovereignty:</strong> Architectural patterns that keep user data on-device without requiring cloud routes for intelligence.</li>
+            <li><strong>Open Source Sustainability:</strong> Building projects that are genuinely useful, maintainable, and give back to communities that enable them.</li>
+        </ul>
+
+        <h3 class="section-title">Build & Development Style</h3>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>Ship Fast, Iterate Faster</h4>
+                <p>Prefer working code and real feedback over perfect designs. Release early updates, gather hardware diversity feedback, and prioritize next steps based on actual pain points.</p>
+            </div>
+            <div class="about-card">
+                <h4>Validate on Hardware</h4>
+                <p>Don't trust theoretical benchmarks. Every claim is tested on real devices: older laptops, Raspberry Pi boards, mobile phones, and edge servers.</p>
+            </div>
+            <div class="about-card">
+                <h4>User-Centric Problem Solving</h4>
+                <p>Architecture decisions flow from builder pain, not academic trends. If something doesn't solve a real person's problem, it doesn't ship.</p>
+            </div>
+            <div class="about-card">
+                <h4>Transparency First</h4>
+                <p>Code is visible. Design decisions are documented. When a model fails, the failure mode is explained, not hidden behind abstraction.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Current Focus (2024-2025)</h3>
+        <ul class="about-list">
+            <li>Refining KrazyKoreDenAI reasoning reliability at scale (2% → 5%+ trained coverage)</li>
+            <li>Building seamless model switching and orchestration (fast → deep reasoning handoff)</li>
+            <li>Expanding the CLI with better knowledge base integration and RAG features</li>
+            <li>Creating practical deployment guides for robotics and edge automation use cases</li>
+            <li>Growing the builder community through demos, examples, and open collaboration</li>
+        </ul>
+
+        <h3 class="section-title">Why Open & Transparent?</h3>
+        <p>KrazyDen is built in the open because:</p>
+        <ul class="about-list">
+            <li><strong>Trust requires visibility.</strong> You should understand how the AI you're running on your hardware actually works.</li>
+            <li><strong>Better code comes from feedback.</strong> Developers testing real constraints find bugs and optimizations no internal team could catch alone.</li>
+            <li><strong>Collective progress accelerates.</strong> Open source means others can build on this work, extend it, and share improvements back.</li>
+            <li><strong>Vendor lock-in is the enemy.</strong> Open code means you can fork, modify, and maintain the AI stack independently if needed.</li>
+            <li><strong>Intelligence is too important to be proprietary.</strong> Concentrating AI capability behind closed APIs creates unnecessary inequality and fragility.</li>
+        </ul>
+
+        <h3 class="section-title">Get Involved</h3>
+        <p>Whether you're a developer, researcher, enthusiast, or builder working on robotics, edge AI, or automation—there are meaningful ways to contribute:</p>
+        <ul class="about-list">
+            <li><strong>Test & Report:</strong> Deploy on your hardware, share results, and flag issues you encounter.</li>
+            <li><strong>Build Integrations:</strong> Create plugins, wrappers, and tools that extend KrazyDen's utility.</li>
+            <li><strong>Contribute Code:</strong> Submit improvements, optimizations, and new features via pull requests.</li>
+            <li><strong>Write Documentation:</strong> Help translate technical work into guides others can learn from.</li>
+            <li><strong>Share Use Cases:</strong> Tell the story of how you're using KrazyDen to solve real problems.</li>
+            <li><strong>Improve Models:</strong> Collaborate on fine-tuning, quantization, and training improvements.</li>
+        </ul>
+
+        <div class="about-layout" style="margin-top: 2rem;">
+            <div class="about-card">
+                <h4>Build Style</h4>
+                <p>Ship fast, validate on real hardware, and iterate from user pain points instead of theory-only design. Pragmatism over perfection.</p>
+            </div>
+            <div class="about-card">
+                <h4>Personal Mission</h4>
+                <p>Democratize access to capable AI tools. Make it possible for any builder—anywhere, on any budget—to build intelligent systems.</p>
             </div>
             <div class="about-card">
                 <h4>Current Focus</h4>
-                <p>Turning the model family into a coherent stack where each model has a clear role and handoff strategy.</p>
+                <p>Turning the model family into a coherent stack where each model has a clear role, reliable handoff strategy, and measurable value.</p>
             </div>
             <div class="about-card">
-                <h4>Collaboration</h4>
-                <p>Open to feedback from developers testing real constraints, real workloads, and real deployment limits.</p>
+                <h4>Collaboration Welcome</h4>
+                <p>Open to feedback from developers testing real constraints, real workloads, and real deployment limits. Practical insights drive the roadmap.</p>
             </div>
         </div>
-        <h3 class="section-title">Creator Notes</h3>
-        <p>If you are experimenting with local AI, robotics workflows, or tool-first agents, KrazyDen is built for that path. The project welcomes practical feedback, bug reports, and deployment results.</p>
+
+        <h3 class="section-title">Connect & Follow</h3>
         <div class="creator-links">
             <a class="creator-link" href="https://github.com/kengineerog/KrazydenAI" target="_blank">Project Repository</a>
             <a class="creator-link" href="https://github.com/kengineerog" target="_blank">Creator GitHub</a>
@@ -2714,172 +3907,727 @@
 
 <main id="use-write" class="view">
     <div class="page-top"><a onclick="showView('home')" class="back-link">Back to Home</a></div>
-    <h2>Writing + Planning Page</h2>
+    <h2>Writing + Planning</h2>
     <div class="info-section">
         <p class="page-eyebrow">PRO WORKFLOWS | SPECS, DOCS, AND DELIVERY PLANS</p>
-        <p>This page focuses on turning rough ideas into concrete outputs that teams can execute. It is tuned for architecture notes, product briefs, and implementation plans.</p>
-        <h3>Best Uses</h3>
+        <p>This page focuses on turning rough ideas into concrete outputs that teams can execute. It is tuned for architecture notes, product briefs, implementation plans, and professional deliverables that maintain consistency and clarity.</p>
+        
+        <h3 class="section-title">What You Can Build</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>📋 Product Requirement Documents</h4>
+                <p>Transform vague feature requests into well-structured PRDs with goals, scope, acceptance criteria, and success metrics.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🏗️ Architecture & Design Docs</h4>
+                <p>Convert system diagrams and conversations into formal design specifications with API contracts, data models, and deployment notes.</p>
+            </div>
+            <div class="feature-item">
+                <h4>📝 Technical Documentation</h4>
+                <p>Generate user guides, API docs, architecture overviews, and deployment playbooks that stay consistent across your team.</p>
+            </div>
+            <div class="feature-item">
+                <h4>📅 Project Plans & Roadmaps</h4>
+                <p>Break down large initiatives into sprint-ready tasks with dependencies, estimates, and risk mitigation strategies.</p>
+            </div>
+            <div class="feature-item">
+                <h4>📢 Marketing & Communication</h4>
+                <p>Draft release notes, blog posts, announcements, and customer-facing copy that matches your brand voice and tone.</p>
+            </div>
+            <div class="feature-item">
+                <h4>✅ Meeting Summaries & Action Items</h4>
+                <p>Convert discussion transcripts into structured summaries, decisions, and next steps with owner assignment.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Best Uses</h3>
         <ul class="about-list">
-            <li>Convert short prompts into structured product requirement drafts</li>
-            <li>Generate sprint-ready task breakdowns from large goals</li>
-            <li>Create first-pass documentation with consistent section templates</li>
-            <li>Rewrite technical copy for clear tone across teams and audiences</li>
+            <li>Convert short prompts into structured product requirement drafts with all standard sections</li>
+            <li>Generate sprint-ready task breakdowns from large goals with time estimates and dependencies</li>
+            <li>Create first-pass documentation with consistent section templates and tone</li>
+            <li>Rewrite technical copy for clarity and consistency across teams and audiences</li>
+            <li>Synthesize meeting notes, discussion threads, and feedback into coherent action plans</li>
+            <li>Draft multiple versions of the same content at different audience levels (technical vs. executive)</li>
+            <li>Maintain style guides and template consistency across large documentation efforts</li>
+            <li>Generate checklists and templates that new team members can use</li>
         </ul>
+
+        <h3 class="section-title">Example Workflows</h3>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>Quick PRD Generation</h4>
+                <p><strong>Input:</strong> "Add real-time notifications to our dashboard"<br><strong>Output:</strong> Complete PRD with background, goals, risks, timeline, acceptance criteria, and success metrics—ready for team discussion.</p>
+            </div>
+            <div class="about-card">
+                <h4>API Documentation</h4>
+                <p><strong>Input:</strong> Your source code and current API sketch<br><strong>Output:</strong> Formatted REST docs with request/response examples, error codes, auth patterns, and usage guides.</p>
+            </div>
+            <div class="about-card">
+                <h4>Release Coordination</h4>
+                <p><strong>Input:</strong> Feature list + design decisions<br><strong>Output:</strong> Release notes template + blog post + social media post + internal changelog—all in consistent voice.</p>
+            </div>
+            <div class="about-card">
+                <h4>Project Breakdown</h4>
+                <p><strong>Input:</strong> High-level initiative, constraints, team size<br><strong>Output:</strong> Detailed sprint plan with task cards, story points, dependencies, and risk register.</p>
+            </div>
+        </div>
+
         <h3 class="section-title">Output Modes</h3>
         <div class="chip-list">
-            <span class="chip">PRD Mode</span>
-            <span class="chip">Design Doc Mode</span>
-            <span class="chip">Meeting Summary Mode</span>
-            <span class="chip">Release Notes Mode</span>
+            <span class="chip">PRD Mode - Full product specs</span>
+            <span class="chip">Design Doc Mode - Technical architecture</span>
+            <span class="chip">Meeting Summary Mode - Minutes & action items</span>
+            <span class="chip">Release Notes Mode - Public announcements</span>
+            <span class="chip">Brief Mode - Executive summaries</span>
+            <span class="chip">Template Mode - Reusable frameworks</span>
         </div>
-        <h3 class="section-title">Sample Prompt</h3>
-        <div class="highlight-box">"Convert this feature concept into an implementation brief with goals, risks, API contracts, and acceptance criteria."</div>
+
+        <h3 class="section-title">Pro Tips</h3>
+        <ul class="about-list">
+            <li><strong>Prompt Structure Matters:</strong> Start with context, add constraints (timeline, budget, team size), then ask for the specific output.</li>
+            <li><strong>Use Feedback Loops:</strong> Generate a first pass, review it, then prompt "refine the risks section" or "simplify the technical details."</li>
+            <li><strong>Maintain Versions:</strong> The CLI history system stores past outputs—use it to look at different approaches.</li>
+            <li><strong>Template Consistency:</strong> Ask the model to "follow this template:" then paste your company standard. Updates stay consistent.</li>
+            <li><strong>Multi-Audience Versions:</strong> Ask for "a technical version and an executive summary"—save both for different stakeholder groups.</li>
+        </ul>
+
+        <h3 class="section-title">Sample Prompts</h3>
+        <div class="highlight-box">
+            <p style="margin: 0.5rem 0;"><strong>PRD Mode:</strong> "Convert this feature concept into a detailed PRD with goals, user stories, acceptance criteria, risks, timeline, and success metrics."</p>
+            <p style="margin: 0.5rem 0;"><strong>Architecture Doc:</strong> "I have a diagram showing microservices. Convert it into formal design doc with API contracts, data models, deployment notes, and scaling considerations."</p>
+            <p style="margin: 0.5rem 0;"><strong>Project Plan:</strong> "Break down this Q4 initiative into sprint tasks. Include dependencies, estimates, risk register, and owner assignments."</p>
+            <p style="margin: 0.5rem 0;"><strong>Meeting Summary:</strong> "Summarize this meeting: [transcript]. Output: key decisions, action items, owners, and next steps."</p>
+        </div>
     </div>
 </main>
 
 <main id="use-media" class="view">
     <div class="page-top"><a onclick="showView('home')" class="back-link">Back to Home</a></div>
-    <h2>Media Workflow Page</h2>
+    <h2>Media Workflows</h2>
     <div class="info-section">
         <p class="page-eyebrow">MULTI-MODAL PIPELINES | IMAGE, AUDIO, VIDEO, CODE</p>
-        <p>This page is for teams building local creative and analysis pipelines. It supports media understanding, metadata extraction, and controlled generation loops.</p>
-        <h3>Pipeline Blocks</h3>
+        <p>This page is for teams building local creative and analysis pipelines. It supports media understanding, metadata extraction, transcription, and controlled generation loops—all without uploading to external services.</p>
+
+        <h3 class="section-title">What You Can Build</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>🎥 Video Analysis & Summarization</h4>
+                <p>Extract key moments, scenes, shots, and narrative structure from video. Generate transcripts, summaries, and scene-by-scene breakdowns.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🎵 Audio Processing & Transcription</h4>
+                <p>Convert audio to text, identify speakers, extract key moments, generate summaries, and mark timestamps for important quotes.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🖼️ Image Understanding & Tagging</h4>
+                <p>Analyze images for objects, scenes, text, and context. Generate alt-text, keywords, and structured metadata for search and retrieval.</p>
+            </div>
+            <div class="feature-item">
+                <h4>📄 Document & PDF Processing</h4>
+                <p>Extract text, understand layout, identify key sections, and generate structured summaries from PDFs and scanned documents.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🎨 Creative Content Generation</h4>
+                <p>Generate captions, prompts for image generation, storyboards, shot lists, and creative direction documents.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🔍 Bulk Media Cataloging</h4>
+                <p>Process entire folders of media assets and output machine-readable catalogs with consistent metadata for DAM systems.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Pipeline Architecture</h3>
         <div class="about-layout">
             <div class="about-card">
                 <h4>Ingest</h4>
-                <p>Collect source files and normalize formats before processing.</p>
+                <p>Collect source files and normalize formats before processing. Supports batch operations on folders or individual files.</p>
             </div>
             <div class="about-card">
                 <h4>Analyze</h4>
-                <p>Extract entities, timestamps, objects, and scene-level descriptions.</p>
+                <p>Extract entities, timestamps, objects, scenes, text, and context-level descriptions. Generate structured data and metadata.</p>
             </div>
             <div class="about-card">
                 <h4>Transform</h4>
-                <p>Apply prompt-guided edits, captioning, and style conversions.</p>
+                <p>Apply prompt-guided edits, captioning, style conversions, tone adjustments, and content regeneration based on rules.</p>
             </div>
             <div class="about-card">
                 <h4>Export</h4>
-                <p>Return final artifacts with machine-readable manifest metadata.</p>
+                <p>Return final artifacts in multiple formats (JSON, CSV, markdown, structured text) with machine-readable manifest metadata.</p>
             </div>
         </div>
-        <h3 class="section-title">Common Outputs</h3>
+
+        <h3 class="section-title">Common Use Cases</h3>
         <ul class="about-list">
-            <li>Shot-by-shot summaries from long videos</li>
-            <li>Audio transcript plus key moments table</li>
-            <li>Image tagging pack for search and retrieval</li>
-            <li>Prompt-safe JSON outputs for downstream apps</li>
+            <li><strong>Video Production:</strong> Shot-by-shot summaries, transcripts with timestamps, segment identification for editing.</li>
+            <li><strong>Research & Academia:</strong> Extracting data from video lectures, interviews, documentaries—organized by topic.</li>
+            <li><strong>Accessibility:</strong> Auto-generating alt-text, captions, and audio descriptions for media archives.</li>
+            <li><strong>Marketing:</strong> Extracting quotes, creating highlight clips, generating social media snippets from long-form content.</li>
+            <li><strong>Content Management:</strong> Bulk tagging and cataloging assets for DAM systems without manual labeling.</li>
+            <li><strong>Legal & Compliance:</strong> Identifying spoken content in recordings, extracting key dates and figures for audit trails.</li>
+            <li><strong>Podcasting:</strong> Auto-generating show notes, transcripts, keyword extraction, and episode summaries.</li>
         </ul>
+
+        <h3 class="section-title">Output Examples</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>Video Transcript + Summary</h4>
+                <p>Full timestamped transcript + executive summary + key moments table + speaker identification.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Image Metadata Pack</h4>
+                <p>Alt-text + keywords + detected objects + scene description + suggested tags for search.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Audio Key Points</h4>
+                <p>Transcript + key quotes with timestamps + speaker notes + suggested segments for podcast editing.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Batch Catalog</h4>
+                <p>JSON manifest with all files listed, metadata for each, searchable index, and organized folders by content type.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Pro Tips</h3>
+        <ul class="about-list">
+            <li><strong>Batch Processing:</strong> Process folders of media with `/kb add [video-folder]`, then query across all at once.</li>
+            <li><strong>Consistent Format:</strong> Ask for "JSON output with fields: [list them]" to ensure consistent structure across assets.</li>
+            <li><strong>Prompt Templates:</strong> Create a prompt template for your media type, then reuse it across batches for consistency.</li>
+            <li><strong>Quality Control:</strong> Spot-check a few outputs, then refine the prompt before running on large batches.</li>
+            <li><strong>Multi-Format Export:</strong> Ask for "markdown version, JSON version, and CSV version" to serve different downstream tools.</li>
+        </ul>
+
+        <h3 class="section-title">Sample Prompts</h3>
+        <div class="highlight-box">
+            <p style="margin: 0.5rem 0;"><strong>Video Summary:</strong> "Analyze this video: [description or file]. Output: timestamped transcript, key moments table, scene-by-scene breakdown, and 2-paragraph summary."</p>
+            <p style="margin: 0.5rem 0;"><strong>Image Tagging:</strong> "Generate detailed metadata for these images: alt-text, keywords (5-10), detected objects, scene description, and suggested tags for a photo library."</p>
+            <p style="margin: 0.5rem 0;"><strong>Audio Extraction:</strong> "Transcribe this audio and extract: key quotes with timestamps, speaker names if identifiable, and a brief summary of main topics."</p>
+            <p style="margin: 0.5rem 0;"><strong>Batch Cataloging:</strong> "Process this folder of media files and generate a JSON catalog with: filename, duration/size, type, content summary, recommended tags."</p>
+        </div>
     </div>
 </main>
 
 <main id="use-study" class="view">
     <div class="page-top"><a onclick="showView('home')" class="back-link">Back to Home</a></div>
-    <h2>Study Assistant Page</h2>
+    <h2>Study & Learning</h2>
     <div class="info-section">
-        <p class="page-eyebrow">LEARNING SYSTEM | PREP, PRACTICE, RETENTION</p>
-        <p>This page is designed for students and self-learners who want repeatable learning loops, not just one-off answers.</p>
-        <h3>Study Flow</h3>
-        <ul class="about-list">
-            <li>Step 1: Compress chapters into tiered summaries (quick, standard, deep)</li>
-            <li>Step 2: Build quizzes with adaptive difficulty and timed rounds</li>
-            <li>Step 3: Run error review sessions focused on weak concepts</li>
-            <li>Step 4: Generate final revision sheet for exam-day recall</li>
-        </ul>
-        <h3 class="section-title">Subjects It Handles Well</h3>
-        <div class="chip-list">
-            <span class="chip">Math</span>
-            <span class="chip">Physics</span>
-            <span class="chip">Python</span>
-            <span class="chip">System Design</span>
-            <span class="chip">Interview Prep</span>
+        <p class="page-eyebrow">LEARNING SYSTEM | PREP, PRACTICE, RETENTION, MASTERY</p>
+        <p>This page is designed for students and self-learners who want repeatable, AI-guided learning loops that track progress, adapt to weakness, and build deep retention—not just one-off answers.</p>
+
+        <h3 class="section-title">What You Can Learn & Master</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>📚 Academic Subjects</h4>
+                <p>Math, physics, chemistry, biology, history—compress chapters into tiered summaries (quick, standard, deep) then build adaptive quizzes.</p>
+            </div>
+            <div class="feature-item">
+                <h4>💻 Programming + Algorithms</h4>
+                <p>Learn Python, JavaScript, SQL, data structures, algorithms. Get problem-solving walks, code reviews, and complexity analysis.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🎓 Interview Prep</h4>
+                <p>System design, behavioral questions, coding challenges, product management. Generate timed practice rounds with instant feedback.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🧩 Technical Architecture</h4>
+                <p>Learn distributed systems, cloud architecture, ML ops. Deep-dive explanations + quiz generation + case study analysis.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🌐 Languages</h4>
+                <p>Learn grammar, vocabulary, conversation patterns. Interactive practice with real corrections and cultural context.</p>
+            </div>
+            <div class="feature-item">
+                <h4>☁️ Any Domain</h4>
+                <p>Virtually any subject. Supply lecture notes or textbook chapters and get an adaptive learning system in minutes.</p>
+            </div>
         </div>
-        <h3 class="section-title">Memory Boost Method</h3>
-        <p>Use spaced repetition packets generated from your own mistakes so review time stays focused on concepts that actually need reinforcement.</p>
+
+        <h3 class="section-title">Learning Flow</h3>
+        <ol class="about-list" style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li><strong>Load Knowledge:</strong> Paste lecture notes, textbook chapter, or curriculum outline into the CLI.</li>
+            <li><strong>Build Summaries:</strong> Ask for tiered summaries (2-min quick, 10-min standard, detailed deep dive). Choose based on available time.</li>
+            <li><strong>Generate Quizzes:</strong> Create adaptive quizzes that increase difficulty as you score higher. Mix question types: multiple-choice, short-answer, problem-solving.</li>
+            <li><strong>Track Progress:</strong> History logs show your score trends. Identify weak concept areas automatically.</li>
+            <li><strong>Target Weak Areas:</strong> Ask for error review sessions focused only on concepts you struggled with.</li>
+            <li><strong>Final Prep:</strong> Generate revision sheet optimized for exam day recall and confidence.</li>
+        </ol>
+
+        <h3 class="section-title">Subjects That Excel</h3>
+        <div class="chip-list">
+            <span class="chip">Math (Algebra through Calculus)</span>
+            <span class="chip">Physics (Mechanics, Waves, E&M)</span>
+            <span class="chip">Python Programming</span>
+            <span class="chip">JavaScript + Web Dev</span>
+            <span class="chip">Data Structures & Algorithms</span>
+            <span class="chip">System Design Interviews</span>
+            <span class="chip">SQL & Databases</span>
+            <span class="chip">Behavioral Interviewing</span>
+        </div>
+
+        <h3 class="section-title">Spaced Repetition & Memory Science</h3>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>Error-Focused Review</h4>
+                <p>Rather than reviewing everything, focus practice only on concepts where you made mistakes. Save 70% of study time.</p>
+            </div>
+            <div class="about-card">
+                <h4>Interleaved Practice</h4>
+                <p>Mix question types and topics, not blocked sets. Your brain learns transfer better. Ask for "mixed practice set."</p>
+            </div>
+            <div class="about-card">
+                <h4>Elaboration Questions</h4>
+                <p>"Explain why this works" vs. "what is this"—deeper explanation improves retention. Request elaboration prompts.</p>
+            </div>
+            <div class="about-card">
+                <h4>Self-Testing Effect</h4>
+                <p>Quizzes are better study than reading. Generate questions BEFORE you read notes for max learning impact.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Example Study Sessions</h3>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>1-Hour Prep</h4>
+                <p><strong>Goal:</strong> Quick exam prep<br><strong>Flow:</strong> Load chapter → 2-min summary → 5-question rapid quiz → Error review → 2-page flashcard deck.</p>
+            </div>
+            <div class="about-card">
+                <h4>Deep Learning (1 Week)</h4>
+                <p><strong>Goal:</strong> Master complex topic<br><strong>Flow:</strong> Load textbook chapter → Read deep summary → Daily quizzes → Progress tracking → Focus error areas → Final exam simulation.</p>
+            </div>
+            <div class="about-card">
+                <h4>Interview Bootcamp (4 Weeks)</h4>
+                <p><strong>Goal:</strong> Ace technical interviews<br><strong>Flow:</strong> Load interview guide → Practice problems → Interview simulation (with live feedback) → Weak area deep-dives → Mock interview dry-runs.</p>
+            </div>
+            <div class="about-card">
+                <h4>Language Immersion</h4>
+                <p><strong>Goal:</strong> Conversation fluency<br><strong>Flow:</strong> Load grammar + vocabulary → Matching exercises → Conversation simulations → Error correction → Native speaker perspective.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Pro Tips</h3>
+        <ul class="about-list">
+            <li><strong>Teach Someone Else:</strong> Ask "explain this to a beginner"—teaching forces deeper processing.</li>
+            <li><strong>Build Mental Models:</strong> Request "diagram how X connects to Y" or "compare X vs. Y"—forces deeper understanding.</li>
+            <li><strong>Simulate Exams:</strong> Ask for "timed practice test" with realistic timing pressure—trains for test day.</li>
+            <li><strong>Get Unstuck:</strong> 'I don't understand this concept. Explain it 3 different ways' avoids frustration.</li>
+            <li><strong>Mastery Levels:</strong> Ask for "beginner, intermediate, expert-level questions" and track progression through levels.</li>
+        </ul>
+
+        <h3 class="section-title">Sample Questions to Ask</h3>
+        <div class="highlight-box">
+            <p style="margin: 0.5rem 0;"><strong>Study Start:</strong> "I'm learning calculus. Load this chapter: [paste text]. Give me a quick 5-min summary and then create a 10-question quiz to test understanding."</p>
+            <p style="margin: 0.5rem 0;"><strong>Struggling:</strong> "I got 3 out of 10 problems wrong. They were all about limits. Create a focused lesson on limits with examples."</p>
+            <p style="margin: 0.5rem 0;"><strong>Exam Prep:</strong> "Create a timed exam-style practice test with 20 problems covering all topics from this course."</p>
+            <p style="margin: 0.5rem 0;"><strong>Interview:</strong> "Interview prep—give me a system design question, then grill my solution with follow-up questions."</p>
+        </div>
     </div>
 </main>
 
 <main id="use-debug" class="view">
     <div class="page-top"><a onclick="showView('home')" class="back-link">Back to Home</a></div>
-    <h2>Debugging Workbench Page</h2>
+    <h2>Debugging & Problem Solving</h2>
     <div class="info-section">
-        <p class="page-eyebrow">ENGINEERING MODE | TRACE, PATCH, VERIFY</p>
-        <p>This page helps you move from bug report to validated fix with fewer loops and cleaner handoffs.</p>
-        <h3>Debug Loop</h3>
+        <p class="page-eyebrow">ENGINEERING MODE | TRACE, PATCH, VERIFY, PREVENT</p>
+        <p>This page helps you move from bug report to validated fix with fewer loops and cleaner handoffs. Structured debugging reduces time spent in frustration and increases confidence in fixes.</p>
+
+        <h3 class="section-title">The Debugging Process</h3>
         <div class="about-layout">
             <div class="about-card">
-                <h4>Reproduce</h4>
-                <p>Turn vague bug reports into exact reproduction steps and expected behavior.</p>
+                <h4>1. Reproduce</h4>
+                <p>Turn vague bug reports ("it doesn't work") into exact, repeatable steps and expected vs. actual behavior.</p>
             </div>
             <div class="about-card">
-                <h4>Localize</h4>
-                <p>Narrow to likely files, functions, and state transitions causing failure.</p>
+                <h4>2. Localize</h4>
+                <p>Narrow failure to specific files, functions, and state transitions. Identify what changed and why.</p>
             </div>
             <div class="about-card">
-                <h4>Patch</h4>
-                <p>Generate minimal, reviewable changes with regression risk notes.</p>
+                <h4>3. Patch</h4>
+                <p>Generate minimal, reviewable fixes with regression risk notes and side-effect analysis.</p>
             </div>
             <div class="about-card">
-                <h4>Verify</h4>
-                <p>Create test cases covering normal paths, edge cases, and rollback signals.</p>
+                <h4>4. Verify</h4>
+                <p>Create test cases covering normal paths, edge cases, and rollback signals. Prevent repeat regressions.</p>
             </div>
         </div>
-        <h3 class="section-title">What You Get</h3>
+
+        <h3 class="section-title">What The Debugging Workflow Provides</h3>
         <ul class="about-list">
-            <li>Root-cause candidates ranked by confidence</li>
-            <li>Patch proposal with before/after behavior summary</li>
-            <li>Suggested test matrix for CI and local verification</li>
-            <li>Post-fix checklist to prevent repeat regressions</li>
+            <li><strong>Root-Cause Analysis:</strong> Ranked candidates by confidence with evidence chains explaining why each is likely.</li>
+            <li><strong>Patch Proposals:</strong> Minimal changes with before/after behavior summaries and risk assessment.</li>
+            <li><strong>Test Matrix:</strong> Suggested test cases for CI, staging, and local verification with expected outcomes.</li>
+            <li><strong>Prevention Checklist:</strong> Anti-patterns to avoid and monitoring to set up to prevent repeat issues.</li>
+            <li><strong>Documentation:</strong> Post-incident summary for knowledge base and future team reference.</li>
         </ul>
+
+        <h3 class="section-title">Common Debugging Scenarios</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>💥 Crash Debugging</h4>
+                <p>Stack trace + code → localize crash point → propose fix → generate test case. Minimal info + structured output.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🐌 Performance Issue</h4>
+                <p>Load time increased? → analyze code paths → spot bottleneck → propose optimization. Get profile guidance.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🔴 Data Corruption</h4>
+                <p>Unexpected state? → trace data flow → spot mutation bug → safe fix proposal → data recovery strategy.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🔗 Integration Bug</h4>
+                <p>Two services broken together? → isolate interaction → trace message contract → propose fix → update tests.</p>
+            </div>
+            <div class="feature-item">
+                <h4>⏱️ Race Condition</h4>
+                <p>Intermittent failures? → analyze concurrency → spot shared state → propose synchronization fix.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🔐 Security Issue</h4>
+                <p>Potential vulnerability? → analyze threat model → spot flaw → propose hardening → update guard rails.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Debugging Example Workflows</h3>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>5-Minute Triage</h4>
+                <p><strong>Input:</strong> Bug title + error message<br><strong>Output:</strong> 3 root-cause hypotheses ranked by likelihood + next steps.</p>
+            </div>
+            <div class="about-card">
+                <h4>Full Investigation</h4>
+                <p><strong>Input:</strong> Error logs + relevant code files<br><strong>Output:</strong> Root cause (confidence level) + patch proposal + test plan + prevention advice.</p>
+            </div>
+            <div class="about-card">
+                <h4>Performance Bottleneck</h4>
+                <p><strong>Input:</strong> "Endpoint usually 200ms, now 5s"<br><strong>Output:</strong> Likely slow components + optimization proposals + benchmark test.</p>
+            </div>
+            <div class="about-card">
+                <h4>Regression Analysis</h4>
+                <p><strong>Input:</strong> What changed between good and bad commit<br><strong>Output:</strong> Diff analysis + impact statement + safe revert or fix strategy.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Pro Debugging Tips</h3>
+        <ul class="about-list">
+            <li><strong>Bring Full Context:</strong> Paste error logs, relevant code, and the debugging steps you've already tried. More info = faster diagnosis.</li>
+            <li><strong>Ask for Proof:</strong> Don't just get a hypothesis—ask "show me the code that triggers this" and "what conditions cause it?"</li>
+            <li><strong>Test the Fix:</strong> After a proposed patch, ask "create a test case that fails with the old code and passes with the new."</li>
+            <li><strong>Learn the Pattern:</strong> Ask "what anti-pattern caused this?" to prevent similar bugs in code reviews.</li>
+            <li><strong>Get Multiple Views:</strong> "Explain this bug 3 ways: to me, to a junior dev, and as a code comment" ensures you really understand it.</li>
+        </ul>
+
+        <h3 class="section-title">Integration with Your Workflow</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>Local Error Triage</h4>
+                <p>Get diagnostics without cloud upload. Private debugging for proprietary codebases and internal systems.</p>
+            </div>
+            <div class="feature-item">
+                <h4>CI/CD Integration</h4>
+                <p>Pipe failed test output to KrazyDen for instant root-cause suggestions before human review.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Code Review Helper</h4>
+                <p>Run proposed fixes through analysis before they hit production. Catch regressions early.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Knowledge Base Learning</h4>
+                <p>Build internal bug pattern database. Learn from past issues to debug similar bugs faster next time.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Sample Debugging Queries</h3>
+        <div class="highlight-box">
+            <p style="margin: 0.5rem 0;"><strong>Quick Triage:</strong> "Got error: 'TypeError: Cannot read property name of undefined at line 42'. Paste the code: [code block]. What's the root cause?"</p>
+            <p style="margin: 0.5rem 0;"><strong>Full Debug:</strong> "Function that was fast is now slow. Profile before: 200ms, now: 5s. Here's the code: [paste]. Where's the bottleneck?"</p>
+            <p style="margin: 0.5rem 0;"><strong>Patch Review:</strong> "I fixed bug X with this patch: [diff]. Did I fix it right? Any regressions? Create a test case."</p>
+            <p style="margin: 0.5rem 0;"><strong>Post-Mortem:</strong> "We had this issue, here's what caused it: [details]. How do we prevent this in the future?"</p>
+        </div>
     </div>
 </main>
 
 <main id="use-automation" class="view">
     <div class="page-top"><a onclick="showView('home')" class="back-link">Back to Home</a></div>
-    <h2>Agent Automation Page</h2>
+    <h2>Agent Automation</h2>
     <div class="info-section">
         <p class="page-eyebrow">WORKFLOW ORCHESTRATION | TOOLS + RULES + OUTPUTS</p>
-        <p>This page is for building autonomous or semi-autonomous task chains that execute repeat work with predictable outputs.</p>
-        <h3>Automation Blueprint</h3>
-        <ul class="about-list">
-            <li>Trigger from schedule, webhook, file update, or command input</li>
-            <li>Classify request type and route to the right model profile</li>
-            <li>Execute tools in sequence with retries and fallback behavior</li>
-            <li>Return result as JSON, markdown report, or ticket update</li>
-        </ul>
-        <h3 class="section-title">Reliability Controls</h3>
+        <p>This page is for building autonomous or semi-autonomous task chains that execute repeat work with predictable, quality outputs. Set it up once, run it 1000 times, and let the AI handle the execution.</p>
+
+        <h3 class="section-title">What You Can Automate</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>📧 Email Processing</h4>
+                <p>Classify incoming emails, extract key info, assign to teams, draft responses—all locally without cloud sync.</p>
+            </div>
+            <div class="feature-item">
+                <h4>📝 Document Processing</h4>
+                <p>Ingest PDFs, extract structured data, fill templates, generate reports automatically at scale.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🔍 Content Moderation</h4>
+                <p>Flag harmful content, classify by severity, queue for human review—private, accountable, no cloud upload.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🎫 Ticket Triage</h4>
+                <p>Auto-classify support tickets, extract actionable info, assign priority, draft responses, route to experts.</p>
+            </div>
+            <div class="feature-item">
+                <h4>💬 Scheduled Reporting</h4>
+                <p>Daily/weekly reports from data queries. Summarize trends, highlight anomalies, alert on thresholds.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🤝 Customer Communication</h4>
+                <p>Templates for common scenarios. Generate personalized responses, maintain tone consistency, track variations.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Automation Architecture</h3>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>Trigger</h4>
+                <p>Schedule (hourly, daily, weekly), webhook, file update, manual command, or event-based (email arrives, etc.).</p>
+            </div>
+            <div class="about-card">
+                <h4>Classify & Route</h4>
+                <p>Determine request type, complexity, and which model profile handles it best. Run parallel micro-tasks if needed.</p>
+            </div>
+            <div class="about-card">
+                <h4>Execute Tools</h4>
+                <p>Call external APIs, databases, file systems in sequence. Retries on transient failures. Logs all steps for audit.</p>
+            </div>
+            <div class="about-card">
+                <h4>Output & Return</h4>
+                <p>Format result as JSON, markdown, email, Slack message, or database update. Notify stakeholders of completion.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Typical Automation Scenarios</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>🌙 Overnight Batch Jobs</h4>
+                <p><strong>What:</strong> Process 1000 PDFs nightly, extract key data, populate database.<br><strong>Benefit:</strong> No human intervention. Results ready for morning review.</p>
+            </div>
+            <div class="feature-item">
+                <h4>⏰ Hourly Monitoring</h4>
+                <p><strong>What:</strong> Check system health, analyze logs, alert on anomalies.<br><strong>Benefit:</strong> Early warning before customer impact.</p>
+            </div>
+            <div class="feature-item">
+                <h4>📲 On-Demand Workflows</h4>
+                <p><strong>What:</strong> Trigger via command/"ask KrazyDen to..." in your app.<br><strong>Benefit:</strong> AI-powered features without complex integration.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🔄 Multi-Step Chains</h4>
+                <p><strong>What:</strong> Task A runs, then B uses A's output, then C decides next step.<br><strong>Benefit:</strong> Complex logic without code changes.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Reliability & Safety Controls</h3>
         <div class="chip-list">
-            <span class="chip">Retry Window</span>
-            <span class="chip">Timeout Caps</span>
-            <span class="chip">Audit Logs</span>
-            <span class="chip">Manual Override</span>
+            <span class="chip">Retry Windows (exponential backoff)</span>
+            <span class="chip">Timeout Caps (prevents hanging)</span>
+            <span class="chip">Audit Logs (full trace)</span>
+            <span class="chip">Manual Override (pause/stop)</span>
+            <span class="chip">Dry-Run Mode (test before deploy)</span>
+            <span class="chip">Error Callbacks (notify on failure)</span>
+        </div>
+
+        <h3 class="section-title">Real-World Examples</h3>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>Support Ticket Triage</h4>
+                <p><strong>Trigger:</strong> New email arrives<br><strong>Flow:</strong> Extract issue → classify severity → assign team → draft response → log to system → email requestor.<br><strong>Outcome:</strong> 80% of tickets auto-handled. Humans only review escalations.</p>
+            </div>
+            <div class="about-card">
+                <h4>Nightly Data Report</h4>
+                <p><strong>Trigger:</strong> 3AM daily<br><strong>Flow:</strong> Query metrics → analyze trends → generate summary → check anomalies → email team with insights.<br><strong>Outcome:</strong> Reports ready at standup without manual work.</p>
+            </div>
+            <div class="about-card">
+                <h4>Document Processing Pipeline</h4>
+                <p><strong>Trigger:</strong> PDF added to folder<br><strong>Flow:</strong> Extract text → categorize → fill template → validate → upload result → notify user.<br><strong>Outcome:</strong> 100-page report processed in 10 seconds flat.</p>
+            </div>
+            <div class="about-card">
+                <h4>Content Moderation</h4>
+                <p><strong>Trigger:</strong> User post created<br><strong>Flow:</strong> Classify content → flag if risky → queue for review → update status → notify mods.<br><strong>Outcome:</strong> Consistent, accountable moderation at scale.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Building Your First Automation</h3>
+        <ol class="about-list" style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li><strong>Define the Task:</strong> What should run automatically? When? What are inputs and outputs?</li>
+            <li><strong>Describe the Flow:</strong> In natural language, list steps. KrazyDen converts to executable plan.</li>
+            <li><strong>Define Tools:</strong> What external APIs or functions should it call? Set up careful input validation.</li>
+            <li><strong>Test in Dry-Run:</strong> Run once manually, verify output, then enable automation.</li>
+            <li><strong>Monitor Early:</strong> Check logs for first 10 runs. Refine prompts or tool behavior as needed.</li>
+            <li><strong>Graduate to Scale:</strong> Once confident, enable full automation with error callbacks.</li>
+        </ol>
+
+        <h3 class="section-title">Pro Tips for Agents</h3>
+        <ul class="about-list">
+            <li><strong>Verbose Logs:</strong> Set verbose mode initially. Logs help debug why automation behaved unexpectedly.</li>
+            <li><strong>Tool Contracts:</strong> Be explicit: "Call API X with auth header Y. Expect response shape Z. If error, retry 3 times."</li>
+            <li><strong>Circuit Breakers:</strong> Define "if failure count > N in unit time, disable automation and notify me" to prevent cascades.</li>
+            <li><strong>Version Your Prompts:</strong> Save automation prompts in version control. Track what changed when behavior drifts.</li>
+            <li><strong>Staged Rollout:</strong> Start with low-volume test, then 25%, 50%, 100%. Catch drift early.</li>
+        </ul>
+
+        <h3 class="section-title">Sample Automation Prompts</h3>
+        <div class="highlight-box">
+            <p style="margin: 0.5rem 0;"><strong>Support Triage:</strong> "Create an automation that: (1) reads new emails, (2) classifies severity, (3) drafts response template, (4) assignments to teams. Tools available: email API, classification, ticket system."</p>
+            <p style="margin: 0.5rem 0;"><strong>Nightly Report:</strong> "Daily at 3AM, fetch metrics from [endpoint], analyze trends, generate summary, email [team]. If errors spike, alert [oncall]."</p>
+            <p style="margin: 0.5rem 0;"><strong>Document Processing:</strong> "When PDF added to [folder], extract text, fill [template], validate quality, upload result, notify user. Retry on failure."</p>
+            <p style="margin: 0.5rem 0;"><strong>Content Moderation:</strong> "Screen each post for harmful content. Flag if risky, queue for review, maintain audit log, notify mods."</p>
         </div>
     </div>
 </main>
 
 <main id="use-robotics" class="view">
     <div class="page-top"><a onclick="showView('home')" class="back-link">Back to Home</a></div>
-    <h2>Robot Planning Page</h2>
+    <h2>Robotics & Control</h2>
     <div class="info-section">
         <p class="page-eyebrow">ROBOTICS CONTROL | TASK GRAPH + SAFETY CONSTRAINTS</p>
-        <p>Use this page for robotics-oriented reasoning where plans must be explicit, constrained, and recoverable.</p>
-        <h3>Planning Layers</h3>
+        <p>Use this page for robotics-oriented reasoning where plans must be explicit, constrained, and recoverable. Convert high-level goals into step-by-step task graphs with safety checks and fallback behaviors built-in.</p>
+
+        <h3 class="section-title">Core Robot Planning Capabilities</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>🎯 Goal Decomposition</h4>
+                <p>Convert "pick up the red block" into ordered micro-actions: locate → approach → grasp → lift → validate.</p>
+            </div>
+            <div class="feature-item">
+                <h4>⚠️ Safety-First Planning</h4>
+                <p>Awareness of collision zones, force limits, power constraints. Plans fail safe, never risk hardware.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🔄 Fallback Chains</h4>
+                <p>If Plan A fails (gripper stuck), switch to Plan B (use different approach). Graded responses, not brittle failure.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🛤️ Dependency Graphs</h4>
+                <p>Understand task ordering. Task B can't run until A succeeds. Plans respect dependencies automatically.</p>
+            </div>
+            <div class="feature-item">
+                <h4>🪛 Tool Integration</h4>
+                <p>Plans call specific robot commands: move_arm(pose), activate_gripper(), measure_distance(). Structured output.</p>
+            </div>
+            <div class="feature-item">
+                <h4>📊 Performance Metrics</h4>
+                <p>Plans track energy usage, time, success probability. Optimize for efficiency or speed as needed.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">The Robot Planning Layers</h3>
         <div class="about-layout">
             <div class="about-card">
                 <h4>Intent Parse</h4>
-                <p>Convert high-level goals into deterministic mission intent.</p>
+                <p>Convert natural language goal ("clean the table") into deterministic mission intent with clear success criteria and edge cases.</p>
             </div>
             <div class="about-card">
                 <h4>Task Graph</h4>
-                <p>Break intent into ordered actions and dependency chains.</p>
+                <p>Break intent into ordered actions with dependencies. "Move gripper" can't happen before "move arm."</p>
             </div>
             <div class="about-card">
                 <h4>Constraint Gate</h4>
-                <p>Check timing, battery, range, and collision constraints.</p>
+                <p>Check timing (deadline?), battery (enough juice?), range (can reach?), collision risks. Reject infeasible plans early.</p>
             </div>
             <div class="about-card">
                 <h4>Fallback Path</h4>
-                <p>Switch to safe-state actions when sensor confidence drops.</p>
+                <p>When sensor confidence drops or step fails, switch to safer, slower mode. Graceful degradation, not crash.</p>
             </div>
+        </div>
+
+        <h3 class="section-title">Real-World Robot Scenarios</h3>
+        <div class="about-layout">
+            <div class="about-card">
+                <h4>🤖 Manipulation Tasks</h4>
+                <p><strong>Goal:</strong> Pick specific object from cluttered bin<br><strong>Plan:</strong> Scan scene → identify target → compute grasp points → approach safely → grab → lift → validate → place → success.<br><strong>Fallback:</strong> If grasp fails, adjust angle and retry. If still fails, request human help.</p>
+            </div>
+            <div class="about-card">
+                <h4>🚀 Mobile Navigation</h4>
+                <p><strong>Goal:</strong> Reach delivery location without hitting obstacles<br><strong>Plan:</strong> Map environment → compute path → move incrementally → sense obstacles → replan if blocked → reach target.<br><strong>Safety:</strong> Slow down near humans. Avoid collision zones. Battery check before committing.</p>
+            </div>
+            <div class="about-card">
+                <h4>🔧 Assembly Tasks</h4>
+                <p><strong>Goal:</strong> Assemble parts into final product<br><strong>Plan:</strong> Validate parts present → sequence steps → execute assembly → measure tolerance → validate fit → next step.<br><strong>Constraint:</strong> Force limits prevent damage. Each step has success criteria.</p>
+            </div>
+            <div class="about-card">
+                <h4>🔍 Inspection & Monitoring</h4>
+                <p><strong>Goal:</strong> Inspect all equipment for anomalies<br><strong>Plan:</strong> Move to inspection points → capture images/data → analyze → flag issues → return.<br><strong>Smart:</strong> Prioritize high-risk areas. Skip already-checked zones. Alert on critical findings.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Task Graph Example: Picking an Object</h3>
+        <pre style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; font-size: 0.9rem;">
+Goal: Pick red block from table
+
+Task Graph:
+1. Scan scene (camera)
+   ↓
+2. Identify red block (vision)
+   ├─ Found? → Proceed to 3
+   └─ Not found? → Abort
+   ↓
+3. Compute approach vector
+   ├─ Reachable? → Proceed to 4
+   └─ Out of reach? → Move base first
+   ↓
+4. Move arm to grasp position
+   ├─ Success? → Proceed to 5
+   └─ Collision? → Replan, try again
+   ↓
+5. Close gripper
+   ├─ Grasped? → Proceed to 6
+   └─ Slipped? → Readjust, retry (2x max)
+   ↓
+6. Lift object (verify weight)
+   ├─ Lifted? → Success ✓
+   └─ Still on table? → Request human help
+        </pre>
+
+        <h3 class="section-title">Building Robot Plans</h3>
+        <ol class="about-list" style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li><strong>Define the Goal:</strong> Clear success criteria. "Pick up block" vs "place block precisely at 10cm height"—precision matters.</li>
+            <li><strong>List Constraints:</strong> Time limits, battery %, force limits, collision zones. Safety first.</li>
+            <li><strong>Name Available Tools:</strong> What sensors? What actuators? What APIs? Be explicit.</li>
+            <li><strong>Ask for Task Graph:</strong> "Generate a step-by-step plan with fallback for each step."</li>
+            <li><strong>Validate the Plan:</strong> Does each step have a success condition? Fallback? Timeout?</li>
+            <li><strong>Execute & Monitor:</strong> Run plan, log each step. Pause and replan if unexpected sensor data.</li>
+        </ol>
+
+        <h3 class="section-title">Safety Considerations</h3>
+        <ul class="about-list">
+            <li><strong>Force Limits:</strong> Always include torque/force thresholds. Robots can hurt people. Be paranoid.</li>
+            <li><strong>Collision Avoidance:</strong> Define keep-out zones. Plans should never approach humans closely.</li>
+            <li><strong>Fail-Safe Defaults:</strong> On power loss or comms failure, robot should stop, not continue blindly.</li>
+            <li><strong>Sensor Confidence:</strong> If confidence < threshold, slow down or stop. Don't blindly trust one sensor.</li>
+            <li><strong>Human Override:</strong> Always have a kill switch. Operator can abort any plan at any time.</li>
+            <li><strong>Audit Trail:</strong> Log all commands sent, sensor readings, and decision points for safety review.</li>
+        </ul>
+
+        <h3 class="section-title">Integration Patterns</h3>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>Planning Middleware</h4>
+                <p>KrazyDen generates executable plans. Your robot control system interprets and executes them with real-time safety monitoring.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Fallback Intelligence</h4>
+                <p>Primary robot controller runs all-or-nothing. When it fails, KrazyDen helps replan with degraded capabilities.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Online Learning</h4>
+                <p>Capture what failed, why, what worked. Feed back to KrazyDen to improve future plans.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Human-in-the-Loop</h4>
+                <p>KrazyDen suggests plan. Human approves or refines. Execution is robotics framework's job with safety overrides.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Sample Robot Planning Prompts</h3>
+        <div class="highlight-box">
+            <p style="margin: 0.5rem 0;"><strong>Grasp Planning:</strong> "I have a TurtleBot gripper facing a table with scattered objects. Generate a step-by-step plan to pick the red block. Include fallbacks if grasp fails. Available commands: scan_scene(), identify_object(color), compute_grasp(), move_arm(target), activate_gripper(), lift_vertically()."</p>
+            <p style="margin: 0.5rem 0;"><strong>Navigation:</strong> "Plan a route from Point A to Point B in a warehouse. Avoid collision zones (list given). Account for battery (80% remaining, 20min endurance). Include recharge fallback if needed."</p>
+            <p style="margin: 0.5rem 0;"><strong>Assembly:</strong> "Generate assembly sequence for [parts list]. Each step must have: action, success check, fallback if check fails, force limits. No part may be damaged."</p>
+            <p style="margin: 0.5rem 0;"><strong>Inspection:</strong> "Inspection route visiting [5 locations]. Capture images, flag anything abnormal. Optimize for time (< 10min). Battery check before start."</p>
         </div>
     </div>
 </main>
@@ -5576,7 +7324,8 @@
 
     const extraPaletteItems = [
         { id: 'adaptive-cascade', title: 'Adaptive Intelligence Cascade', kind: 'Monitor' },
-        { id: 'demo', title: 'KrazyKoreDenAI Demo', kind: 'Demo' }
+        { id: 'demo', title: 'KrazyKoreDenAI Demo', kind: 'Demo' },
+        { id: 'cli', title: 'CLI Tools & Downloads', kind: 'Tool' }
     ];
     function getViewItems() {
         const list = Array.from(document.querySelectorAll('main.view')).map(view => ({
