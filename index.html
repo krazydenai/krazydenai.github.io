@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>KrazyDen AI - Redirecting...</title>
+    <meta name="description" content="Redirecting to KrazyDen AI"/>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #0d0d1a;
+            color: #e0e0ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 10% 10%, rgba(0, 234, 255, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 90%, rgba(195, 0, 255, 0.08) 0%, transparent 40%);
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 500px;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(90deg, #00eaff, #c300ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 2rem;
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { opacity: 0.8; }
+            to { opacity: 1; }
+        }
+        .message {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        .loading-text {
+            font-size: 1.1rem;
+            color: #b0b0dd;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #00eaff;
+            animation: bounce 1.4s infinite;
+        }
+        .dot:nth-child(1) { animation-delay: 0s; }
+        .dot:nth-child(2) { animation-delay: 0.2s; }
+        .dot:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes bounce {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.7; }
+            30% { transform: translateY(-10px); opacity: 1; }
+        }
+        .url {
+            font-size: 0.9rem;
+            color: #00eaff;
+            margin-top: 2rem;
+            word-break: break-all;
+        }
+        .manual-link {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(0, 234, 255, 0.2);
+        }
+        .manual-link a {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border: 2px solid #00eaff;
+            color: #00eaff;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .manual-link a:hover {
+            background: #00eaff;
+            color: #0d0d1a;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">KRAZYDEN AI</div>
+        <div class="message">Redirecting to page</div>
+        <div class="loading-text">
+            <span>Loading</span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="url">https://krazydenai.github.io/</div>
+        <div class="manual-link">
+            <p style="color: #b0b0dd; margin-bottom: 1rem; font-size: 0.9rem;">If the page doesn't redirect automatically:</p>
+            <a href="https://krazydenai.github.io/">Click here to continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Redirect to the main page
+        window.location.href = 'https://krazydenai.github.io/';
+        
+        // Fallback redirect if the above doesn't work immediately
+        setTimeout(function() {
+            window.location.href = 'https://krazydenai.github.io/';
+        }, 3000);
+    </script>
+</body>
+</html>
